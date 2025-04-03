@@ -1,8 +1,8 @@
 ### <p align="center">Hi there, I'm Nhat Linh ✔️</p>
 
 > [<p align="left"> <img
-    src="https://komarev.com/ghpvc/?username=linhprovip2002"
-    alt="linhprovip2002" /> </p>](https://komarev.com/ghpvc/?username=linhprovip2002)
+    src="https://komarev.com/ghpvc/?username=levidang306"
+    alt="levidang306" /> </p>](https://komarev.com/ghpvc/?username=levidang306)
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
@@ -18,12 +18,12 @@
 ### 🌐 Socials
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
-`linhprovip2002`
-![GitHub stars](https://img.shields.io/github/stars/linhprovip2002?style=social)
+`levidang306`
+![GitHub stars](https://img.shields.io/github/stars/levidang306?style=social)
 
 [![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/bunkid.linh/)
 
-[![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/linhprovip2002)
+[![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/levidang306)
 
 ### 🛠 Languages and Tools
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
@@ -35,10 +35,10 @@
 
 <div style="display:flex;">
   <span style="margin-right:20px;height:auto">
-    <img src="https://github-readme-stats.vercel.app/api?username=linhprovip2002&show_icons=true&theme=radical" height="250">
+    <img src="https://github-readme-stats.vercel.app/api?username=levidang306&show_icons=true&theme=radical" height="250">
   </span>
   <span height:auto>
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=linhprovip2002&show_icons=true&theme=radical" height="250">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=levidang306&show_icons=true&theme=radical" height="250">
   </span>
 </div>
 
@@ -55,8 +55,8 @@
   <tbody>
     <tr>
       <td>
-        <a href="https://github-readme-streak-stats.herokuapp.com/?user=linhprovip2002">
-          <img width="705" src="https://github-readme-streak-stats.herokuapp.com/?user=linhprovip2002&bg_color=30,e96443,904e95&title_color=fff&text_color=fff&theme=radical&hide_border=true">
+        <a href="https://github-readme-streak-stats.herokuapp.com/?user=levidang306">
+          <img width="705" src="https://github-readme-streak-stats.herokuapp.com/?user=levidang306&bg_color=30,e96443,904e95&title_color=fff&text_color=fff&theme=radical&hide_border=true">
         </a>
       </td>
     </tr>
@@ -64,8 +64,8 @@
   <tbody>
     <tr>
       <td>
-        <a href="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=linhprovip2002">
-          <img width="715" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=linhprovip2002&theme=dracula"/>
+        <a href="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=levidang306">
+          <img width="715" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=levidang306&theme=dracula"/>
         </a>
       </td>
     </tr>
@@ -73,8 +73,8 @@
   <tbody>
     <tr>
       <td>
-        <a href="https://activity-graph.herokuapp.com/graph?username=linhprovip2002">
-          <img width="705" src="https://activity-graph.herokuapp.com/graph?username=linhprovip2002&theme=dracula">
+        <a href="https://activity-graph.herokuapp.com/graph?username=levidang306">
+          <img width="705" src="https://activity-graph.herokuapp.com/graph?username=levidang306&theme=dracula">
         </a>
       </td>
     </tr>
@@ -85,13 +85,13 @@
   <tbody>
     <tr>
       <th>
-        <a href="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=linhprovip2002">
-          <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=linhprovip2002&theme=dracula"/>
+        <a href="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=levidang306">
+          <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=levidang306&theme=dracula"/>
         </a>
       </th>
       <th>
-        <a href="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=linhprovip2002&">
-          <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=linhprovip2002&theme=dracula"/>
+        <a href="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=levidang306&">
+          <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=levidang306&theme=dracula"/>
         </a>
       </th>
     </tr>
@@ -99,13 +99,13 @@
   <tbody>
     <tr>
       <td>
-        <a href="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=linhprovip2002">
-          <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=linhprovip2002&theme=dracula"/>
+        <a href="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=levidang306">
+          <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=levidang306&theme=dracula"/>
         </a>
       </td>
       <td>
-        <a href="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=linhprovip2002">
-          <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=linhprovip2002&theme=dracula"/>
+        <a href="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=levidang306">
+          <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=levidang306&theme=dracula"/>
         </a>
       </td>
     </tr>
