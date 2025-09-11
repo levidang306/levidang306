@@ -111,10 +111,7 @@ I'm a passionate **Back-end Developer** and **AI Researcher** with expertise in 
 ## 📈 Activity Graph
 
 <!-- Change theme (e.g., dracula, github-dark) or adjust parameters -->
-<p align="center">
-  <img src="https://activity-graph.herokuapp.com/graph?username=levidang306&theme=dracula&hide_border=true" alt="Contribution Graph" width="700" />
-</p>
-
+[![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=levidang306&bg_color=ffffff&color=000000&line=9be9a8&point=40c463&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
 ---
 
 ## 📝 Blog & Contributions
