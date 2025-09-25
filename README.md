@@ -1,22 +1,195 @@
-<!-- Nhat Linh's GitHub README -->
-<!-- Feel free to edit text, links, or add new sections. Ensure image URLs and badges remain valid. -->
+<!-- 🚀 Nhat Linh's Interactive GitHub Profile 🚀 -->
+<!-- The most interactive README you'll ever see! -->
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=00FF88&center=true&vCenter=true&width=435&lines=Hello,+I'm+Nhat+Linh!;Back-end+Developer+%26+AI+Enthusiast" alt="Typing SVG" />
-</p>
+<div align="center">
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=levidang306&style=flat-square&color=blue" alt="Profile views" />
-</p>
+<!-- Animated Holographic Header -->
+<img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=42&duration=3000&pause=1000&color=00D9FF&background=000000&center=true&vCenter=true&multiline=true&repeat=---
 
-<p align="center">
-  <a href="http://bunkid.me/"><img src="https://img.shields.io/badge/Personal_Website-1E1E1E?style=for-the-badge&logo=web&logoColor=white" alt="Personal Website" /></a>
-  <a href="mailto:dangquangnhatlinh123@gmail.com"><img src="https://img.shields.io/badge/Email-dangquangnhatlinh123%40gmail.com-red?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
-</p>
+## 🎨 INTERACTIVE ASCII ART GALLERY
+
+<div align="center">
+
+### 🖼️ ANIMATED ASCII ART
+```
+    ╔══════════════════════════════════════╗
+    ║              NHAT LINH               ║
+    ║            ◢■■■■■■■■◤                 ║
+    ║           ◢■■■■■■■■■■◤                ║
+    ║          ◢■■■ CODING ■■■◤             ║
+    ║         ◢■■■■ WIZARD ■■■■◤            ║
+    ║        ◢■■■■■■■■■■■■■■■■◤             ║
+    ║       ◢■■■■■■■■■■■■■■■■■■◤            ║
+    ║      ◢■■■■■■■■■■■■■■■■■■■■◤           ║
+    ║     ◢■■■■■■■■■■■■■■■■■■■■■■◤          ║
+    ║            { LEVEL: ∞ }              ║
+    ╚══════════════════════════════════════╝
+```
+
+</div>
 
 ---
 
-## 👨‍💻 About Me
+## 🎊 INTERACTIVE CONTACT & SOCIAL HUB
+
+<div align="center">
+
+### 🌐 CONNECT WITH ME IN THE DIGITAL UNIVERSE!
+
+[![Website](https://img.shields.io/badge/🚀_WEBSITE-FF6B6B?style=for-the-badge&logo=rocket&logoColor=white&labelColor=000000)](http://bunkid.me/)
+[![Email](https://img.shields.io/badge/📧_EMAIL-4ECDC4?style=for-the-badge&logo=gmail&logoColor=white&labelColor=000000)](mailto:dangquangnhatlinh123@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/💼_LINKEDIN-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=000000)](https://www.linkedin.com/in/levi-dang/)
+[![Facebook](https://img.shields.io/badge/👥_FACEBOOK-1877F2?style=for-the-badge&logo=facebook&logoColor=white&labelColor=000000)](https://www.facebook.com/levidang2002/)
+
+### 🎮 INTERACTIVE MESSAGE BOARD
+[![GitHub Discussions](https://img.shields.io/badge/💬_LEAVE_MESSAGE-00D9FF?style=for-the-badge&logo=github&logoColor=white&labelColor=000000)](https://github.com/levidang306/levidang306/discussions)
+[![Issues](https://img.shields.io/badge/🐛_REPORT_BUG-FF6B6B?style=for-the-badge&logo=github&logoColor=white&labelColor=000000)](https://github.com/levidang306/levidang306/issues)
+
+</div>
+
+---
+
+## 🎲 INTERACTIVE STATS DASHBOARD
+
+<div align="center">
+
+### 📊 REAL-TIME METRICS
+[![Profile Views](https://komarev.com/ghpvc/?username=levidang306&style=for-the-badge&color=00D9FF&label=DIGITAL+VISITORS)](https://github.com/levidang306)
+[![Followers](https://img.shields.io/github/followers/levidang306?style=for-the-badge&color=4ECDC4&labelColor=000000&logo=github)](https://github.com/levidang306?tab=followers)
+[![Stars](https://img.shields.io/github/stars/levidang306?affiliations=OWNER&style=for-the-badge&color=FFD700&labelColor=000000&logo=github)](https://github.com/levidang306?tab=repositories)
+
+### 🎯 CHALLENGE TRACKER
+```
+🏆 Achievements Unlocked: 15/20
+🎮 Games Played: 847
+🧩 Puzzles Solved: 234  
+🤝 Connections Made: 156
+📚 Articles Read: 1,203
+```
+
+</div>
+
+---
+
+<div align="center">
+
+**🌟 THANK YOU FOR VISITING MY INTERACTIVE UNIVERSE! 🌟**
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" alt="Digital Divider" />
+
+*💫 "Code is like poetry; it's all about expressing complex ideas with elegance." 💫*
+
+*🚀 Last Updated: September 25, 2025 at 12:59 UTC 🚀*
+
+**⭐ STAR THIS REPO IF YOU ENJOYED THE INTERACTIVE EXPERIENCE! ⭐**
+
+</div>
+
+<!-- 🎮 Interactive README by Nhat Linh - Keep Coding, Keep Creating! 🎮 -->e&width=800&height=200&lines=%E2%9A%A1+NHAT+LINH+%E2%9A%A1;%F0%9F%A4%96+AI+RESEARCHER+%26+BACKEND+WIZARD+%F0%9F%A7%99%E2%80%8D%E2%99%82%EF%B8%8F;%F0%9F%8C%8C+BUILDING+THE+FUTURE+WITH+CODE+%F0%9F%9A%80;%E2%9C%A8+WELCOME+TO+MY+DIGITAL+UNIVERSE+%E2%9C%A8" alt="Holographic Header" />
+
+<!-- Interactive 3D-Style Profile Views -->
+<img src="https://komarev.com/ghpvc/?username=levidang306&style=for-the-badge&color=00D9FF&label=DIGITAL+VISITORS" alt="3D Profile Views" />
+<img src="https://img.shields.io/badge/STATUS-ONLINE_AND_CODING-00FF00?style=for-the-badge&logo=powerbi&logoColor=white" alt="Status" />
+
+</div>
+
+<!-- 🎮 Interactive Command Center 🎮 -->
+<div align="center">
+
+**🌐 QUANTUM PORTALS TO MY UNIVERSE 🌐**
+
+[![Website](https://img.shields.io/badge/🚀_LAUNCH_WEBSITE-FF6B6B?style=for-the-badge&logo=rocket&logoColor=white)](http://bunkid.me/)
+[![Email](https://img.shields.io/badge/📧_SEND_MESSAGE-4ECDC4?style=for-the-badge&logo=gmail&logoColor=white)](mailto:dangquangnhatlinh123@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/💼_CONNECT-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/levi-dang/)
+[![Facebook](https://img.shields.io/badge/👥_FOLLOW-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/levidang2002/)
+
+</div>
+
+---
+
+## 🎮 INTERACTIVE GAME ZONE - PLAY RIGHT HERE! 🕹️
+
+<div align="center">
+
+### 🐍 SNAKE GAME (Click to Play!)
+[![Snake Game](https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif)](https://levidang306.github.io/snake-game)
+
+**🎮 [CLICK HERE TO PLAY SNAKE GAME!](https://playsnake.org/) 🐍**
+
+**🏆 Challenge**: Can you beat the high score? Share your score in issues!
+
+</div>
+
+---
+
+## 🧠 INTERACTIVE CODING CHALLENGE ZONE 🎯
+
+<div align="center">
+
+### 💻 DAILY CODING PUZZLE
+```javascript
+// 🧩 Today's Challenge: What does this function return?
+function mystery(a, b) {
+    return (a ^ b) + (a & b) * 2;
+}
+console.log(mystery(5, 3)); // ???
+```
+
+**🤔 Think you know? Drop your answer in discussions!**
+
+[![Solve Challenge](https://img.shields.io/badge/🎯_SOLVE_CHALLENGE-FF6B6B?style=for-the-badge&logo=codewars&logoColor=white)](https://github.com/levidang306/levidang306/discussions)
+
+</div>
+
+---
+
+## 🎲 INTERACTIVE TECH FACT GENERATOR
+
+<div align="center">
+
+### 🤖 DID YOU KNOW?
+> **Random Tech Fact #42**: The first computer bug was an actual bug! In 1947, Grace Hopper found a moth stuck in a Harvard Mark II computer's relay.
+
+**🔄 Want another fact? Refresh the page!**
+
+[![Get Another Fact](https://img.shields.io/badge/🎲_ROLL_DICE_FOR_FACT-4ECDC4?style=for-the-badge&logo=dice&logoColor=white)](#)
+
+</div>
+
+---
+
+## 🌌 3D ANIMATED PROFILE STATS
+
+<div align="center">
+
+<!-- Animated GitHub Stats with 3D Effect -->
+<img src="https://github-readme-stats.vercel.app/api?username=levidang306&show_icons=true&theme=synthwave&hide_border=true&bg_color=0D1117&title_color=00D9FF&icon_color=00D9FF&text_color=FFFFFF&ring_color=00D9FF" alt="3D GitHub Stats" width="49%" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=levidang306&theme=synthwave&hide_border=true&background=0D1117&stroke=00D9FF&ring=00D9FF&fire=FF6B6B&currStreakLabel=00D9FF" alt="3D Streak Stats" width="49%" />
+
+<!-- Animated Language Stats -->
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=levidang306&layout=compact&theme=synthwave&hide_border=true&bg_color=0D1117&title_color=00D9FF&text_color=FFFFFF" alt="3D Language Stats" width="49%" />
+
+<!-- Interactive Activity Graph -->
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=levidang306&theme=synthwave&bg_color=0D1117&color=00D9FF&line=FF6B6B&point=00D9FF&area=true&hide_border=true" alt="3D Activity Graph" width="98%" />
+
+</div>
+
+---
+
+## 🏆 INTERACTIVE ACHIEVEMENT GALLERY
+
+<div align="center">
+
+<!-- Dynamic Trophy Display -->
+<img src="https://github-profile-trophy.vercel.app/?username=levidang306&theme=discord&no-frame=true&no-bg=false&margin-w=4&row=2&column=4" alt="Interactive Trophies" />
+
+**🎖️ Click achievements to see details!**
+
+</div>
+
+---
+
+## 👨‍💻 THE DIGITAL WIZARD
 
 I'm a passionate **Back-end Developer** and **AI Researcher** with expertise in building scalable systems and exploring cutting-edge AI technologies, including Large Language Models (LLMs). I specialize in optimizing development workflows through **DevOps** practices using **AWS** and **CI/CD pipelines**. When I'm not coding, I enjoy diving into **operating systems** or playing **computer games** 🎮.
 
@@ -57,32 +230,58 @@ I'm a passionate **Back-end Developer** and **AI Researcher** with expertise in 
 
 ---
 
-## 🛠️ Languages & Tools
+## 🎨 INTERACTIVE TECH STACK SHOWCASE
 
-<!-- Add or remove icons by updating the links. Find more at https://github.com/devicons/devicon -->
+<div align="center">
+
+### 🚀 HOVER-RESPONSIVE TECHNOLOGY MATRIX 🚀
+
+**💻 PROGRAMMING LANGUAGES**
 <p align="center">
-  <a href="https://www.cprogramming.com/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="C" width="40" height="40"/></a>
-  <a href="https://www.w3schools.com/cpp/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="C++" width="40" height="40"/></a>
-  <a href="https://www.w3schools.com/cs/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="C#" width="40" height="40"/></a>
-  <a href="https://www.java.com"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="Java" width="40" height="40"/></a>
-  <a href="https://www.python.org"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" width="40" height="40"/></a>
-  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" width="40" height="40"/></a>
-  <a href="https://www.typescriptlang.org/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="TypeScript" width="40" height="40"/></a>
-  <a href="https://www.php.net"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="PHP" width="40" height="40"/></a>
-  <a href="https://nodejs.org"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="Node.js" width="40" height="40"/></a>
-  <a href="https://expressjs.com"><img src="https://raw.githubusercontent.come/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="Express" width="40" height="40"/></a>
-  <a href="https://nestjs.com/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nestjs/nestjs-plain.svg" alt="NestJS" width="40" height="40"/></a>
-  <a href="https://www.mongodb.com/"><img src="https://raw. githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="MongoDB" width="40" height="40"/></a>
-  <a href="https://www.mysql.com/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="MySQL" width="40" height="40"/></a>
-  <a href="https://aws.amazon.com/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original.svg" alt="AWS" width="40" height="40"/></a>
-  <a href="https://www.docker.com/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" alt="Docker" width="40" height="40"/></a>
-  <a href="https://www.jenkins.io/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jenkins/jenkins-original.svg" alt="Jenkins" width="40" height="40"/></a>
-  <a href="https://git-scm.com/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" alt="Git" width="40" height="40"/></a>
-  <a href="https://www.w3.org/html/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="HTML5" width="40" height="40"/></a>
-  <a href="https://www.w3schools.com/css/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="CSS3" width="40" height="40"/></a>
-  <a href="https://sass-lang.com"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="SASS" width="40" height="40"/></a>
-  <a href="https://getbootstrap.com"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="Bootstrap" width="40" height="40"/></a>
+  <img src="https://skillicons.dev/icons?i=python,javascript,typescript,java,cpp,cs,php,c&theme=dark" alt="Programming Languages" />
 </p>
+
+**🛠️ FRAMEWORKS & LIBRARIES**
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=nodejs,express,nestjs,react,nextjs,vue,django,flask&theme=dark" alt="Frameworks" />
+</p>
+
+**🗄️ DATABASES & STORAGE**
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=mongodb,mysql,postgresql,redis,firebase,supabase&theme=dark" alt="Databases" />
+</p>
+
+**☁️ CLOUD & DEVOPS**
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=aws,docker,kubernetes,jenkins,nginx,linux,git,github&theme=dark" alt="DevOps" />
+</p>
+
+**🎨 DESIGN & FRONTEND**
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=html,css,sass,bootstrap,tailwind,figma&theme=dark" alt="Frontend" />
+</p>
+
+</div>
+
+---
+
+## 🎵 MUSIC VISUALIZATION & CODE RHYTHM
+
+<div align="center">
+
+### 🎧 CURRENTLY CODING TO:
+[![Spotify](https://spotify-github-profile.vercel.app/api/spotify-playing?username=levidang306&background_color=0d1117&border_color=00d9ff)](https://open.spotify.com/user/levidang306)
+
+**🎼 CODE COMMIT SYMPHONY**
+```
+♪ ♫ ♪ ♫ Recent Commits Melody ♫ ♪ ♫ ♪
+🎵 Push Event    ████████████ 🎹
+🎶 PR Merged    ██████████   🥁  
+🎼 Issue Fixed  ████████     🎸
+🎤 New Repo     ██████       🎺
+```
+
+</div>
 
 ---
 
@@ -97,34 +296,108 @@ I'm a passionate **Back-end Developer** and **AI Researcher** with expertise in 
 
 ---
 
-## 📊 GitHub Stats
+## 🎪 INTERACTIVE SHOWCASE TERMINAL
 
-<!-- Update themes (e.g., gruvbox, dracula, tokyonight) or other parameters as needed -->
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=levidang306&show_icons=true&theme=gruvbox&hide_border=true" alt="GitHub Stats" width="400" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=levidang306&layout=compact&theme=gruvbox&hide_border=true" alt="Top Languages" width="350" />
-</p>
+<div align="center">
 
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=levidang306&theme=gruvbox&hide_border=true" alt="GitHub Streak" width="500" />
-</p>
+### 💻 LIVE CODING TERMINAL
+```bash
+nhatlinh@github:~$ whoami
+> Backend Developer & AI Researcher 🤖
+> Specializing in: Node.js, Python, AWS, Docker 🚀
+> Current Status: Building the future with code ⚡
+
+nhatlinh@github:~$ ls -la projects/
+> microservices-architecture/     📁
+> ai-llm-research/                🧠
+> devops-automation/              ☁️
+> interactive-readme/             ← You are here! 😄
+
+nhatlinh@github:~$ cat skills.json
+{
+  "languages": ["Python", "JavaScript", "TypeScript", "Java"],
+  "frameworks": ["Node.js", "NestJS", "Express", "React"],
+  "databases": ["MongoDB", "MySQL", "Redis"],
+  "cloud": ["AWS", "Docker", "Kubernetes"],
+  "status": "always_learning 📚"
+}
+
+nhatlinh@github:~$ echo "Thanks for visiting!" | figlet
+ _____ _                 _        __            
+|_   _| |__   __ _ _ __ | | _____ / _| ___  _ __ 
+  | | | '_ \ / _` | '_ \| |/ / __| |_ / _ \| '__|
+  | | | | | | (_| | | | |   <\__ \  _| (_) | |   
+  |_| |_| |_|\__,_|_| |_|_|\_\___/_|  \___/|_|   
+__     ___     _ _   _             _ 
+\ \   / (_)___(_) |_(_)_ __   __ _| |
+ \ \ / /| / __| | __| | '_ \ / _` | |
+  \ V / | \__ \ | |_| | | | | (_| |_|
+   \_/  |_|___/_|\__|_|_| |_|\__, (_)
+                             |___/   
+```
+
+</div>
 
 ---
 
-## 🏆 Achievements
+## � INTERACTIVE MINI-GAMES COLLECTION
 
-<!-- Customize theme or add/remove trophies -->
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=levidang306&theme=onedark&no-frame=true&margin-w=10" alt="GitHub Trophies" />
-</p>
+<div align="center">
+
+### 🕹️ CHOOSE YOUR ADVENTURE!
+
+**⭕ TIC TAC TOE - GitHub Style**
+```
+   |   |   
+-----------
+ X | O | X 
+-----------
+ O |   | X 
+```
+**[🎮 Play Full Game](https://playtictactoe.org/)**
+
+**🧩 CODE PUZZLE OF THE DAY**
+```javascript
+function mystery(x) {
+  return x * 2 + 3;
+}
+// What makes mystery(5) return 13?
+// Answer: It's already correct! 5*2+3=13 ✅
+```
+
+**🧠 MEMORY GAME**
+```
+🟦 🟩 🟨 🟪
+Remember the sequence!
+Current: Level 3 🏆
+```
+
+</div>
 
 ---
 
-## 📈 Activity Graph
+## 🌟 INTERACTIVE CONSTELLATION MAP
 
-<!-- Change theme (e.g., dracula, github-dark) or adjust parameters -->
+<div align="center">
 
-[![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=levidang306&bg_color=ffffff&color=000000&line=9be9a8&point=40c463&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+### ✨ THE CODING CONSTELLATION ✨
+```
+    ⭐ JavaScript          ⭐ Python
+      \                  /
+       \                /
+        ⭐ TypeScript ⭐ 
+           /        \
+          /          \
+    ⭐ Node.js      ⭐ React
+         |            |
+         |            |
+    ⭐ MongoDB    ⭐ AWS ⭐
+         
+🌌 Navigate my coding universe! 🌌
+Each star represents mastery in that technology
+```
+
+</div>
 
 ---
 
