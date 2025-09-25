@@ -3,12 +3,15 @@
 ## 🎯 What Was Fixed
 
 ### ❌ The Problem
+
 ```
 403 {"message": "Resource not accessible by integration"}
 ```
+
 The WakaTime action couldn't access GitHub API with default `GITHUB_TOKEN` permissions.
 
 ### ✅ The Solution
+
 1. **Removed problematic WakaTime integration** (for now)
 2. **Created working update script** (`update-readme-working.js`)
 3. **Simplified workflow** to avoid permission issues
@@ -20,14 +23,14 @@ The WakaTime action couldn't access GitHub API with default `GITHUB_TOKEN` permi
 ✅ **Dynamic activity section updates**  
 ✅ **Timestamp refresh**  
 ✅ **Automatic commits**  
-✅ **No permission errors**  
+✅ **No permission errors**
 
 ## 📊 Test Results
 
 ✅ Script runs locally: `node .github/scripts/update-readme-working.js`  
 ✅ Updates activity section with fresh content  
 ✅ Updates timestamp: `September 25, 2025 at 02:23 PM UTC`  
-✅ Commits automatically on changes  
+✅ Commits automatically on changes
 
 ## 🔧 Current Workflow
 
@@ -47,7 +50,7 @@ jobs:
       - Checkout code
       - Setup Node.js
       - Run update script
-      - Check for changes  
+      - Check for changes
       - Commit if changed
 ```
 
@@ -64,10 +67,12 @@ jobs:
 If you want WakaTime stats back:
 
 1. **Get Personal Access Token**:
+
    - GitHub Settings → Developer Settings → Personal Access Tokens
    - Create token with `repo` and `user` permissions
 
 2. **Add to Repository Secrets**:
+
    - `PERSONAL_ACCESS_TOKEN` - Your GitHub PAT
    - `WAKATIME_API_KEY` - Your WakaTime API key
 
@@ -79,8 +84,9 @@ If you want WakaTime stats back:
 ## 🎉 Success!
 
 Your GitHub profile now has:
+
 - ✅ **No more 403 errors**
-- ✅ **Working auto-updates**  
+- ✅ **Working auto-updates**
 - ✅ **Dynamic content refresh**
 - ✅ **Professional appearance**
 - ✅ **Interactive portfolio ready to deploy**

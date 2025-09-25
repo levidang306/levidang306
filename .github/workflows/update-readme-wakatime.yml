@@ -43,7 +43,7 @@ jobs:
           SHOW_PROFILE_VIEWS: "False"
           SHOW_TOTAL_CODE_TIME: "False"
           COMMIT_BY_ME: "True"
-          
+
       - name: 🎯 Update Dynamic Quote
         run: |
           # Simple quote update
@@ -54,22 +54,22 @@ jobs:
             "Programming isn't about what you know; it's about what you can figure out.|Chris Pine"
             "The best error message is the one that never shows up.|Thomas Fuchs"
           )
-          
+
           RANDOM_INDEX=$((RANDOM % ${#QUOTES[@]}))
           IFS='|' read -r QUOTE AUTHOR <<< "${QUOTES[$RANDOM_INDEX]}"
-          
+
           # Update the quote in README
           sed -i "s|> \*\".*\"\*|> \*\"$QUOTE\"\*|g" README.md
           sed -i "s|> \*\*— .*\*\*|> \*\*— $AUTHOR\*\*|g" README.md
-          
+
           echo "Updated quote: $QUOTE - $AUTHOR"
-          
+
       - name: 📅 Update Timestamp
         run: |
           TIMESTAMP=$(date -u +"%B %d, %Y at %H:%M UTC")
           sed -i "s|Last updated: .*|Last updated: $TIMESTAMP|g" README.md
           echo "Updated timestamp: $TIMESTAMP"
-          
+
       - name: 🔍 Check for Changes
         id: verify_changes
         run: |
@@ -81,7 +81,7 @@ jobs:
             echo "Changes detected"
             git diff --stat
           fi
-          
+
       - name: 💾 Commit Updates
         if: steps.verify_changes.outputs.changed == 'true'
         run: |

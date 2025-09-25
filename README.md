@@ -12,20 +12,26 @@
 <!-- 3D Rotating Name -->
 <div style="perspective: 1000px;">
   <h1 style="
-    animation: rotate3d 4s infinite linear;
     transform-style: preserve-3d;
-    background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #feca57);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 400% 400%;
-    animation: gradient 3s ease infinite, rotate3d 8s infinite linear;
     font-size: 3em;
     text-shadow: 0 0 20px rgba(255,255,255,0.5);
+    display: inline-block;
+    animation: rotate3d 8s infinite linear;
   ">
-    ⚡ NHAT LINH ⚡
+    <span style="
+      background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #feca57);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      background-size: 400% 400%;
+      animation: gradient 3s ease infinite;
+    ">
+      ⚡ NHAT LINH ⚡
+    </span>
   </h1>
 </div>
 
+<!-- Consolidated Styles -->
 <style>
 @keyframes gradient {
   0% { background-position: 0% 50%; }
@@ -41,12 +47,66 @@
   100% { transform: rotateY(360deg) rotateX(0deg); }
 }
 
-@keyframes float {
+@keyframes floatBadge {
   0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-20px); }
+  50% { transform: translateY(-15px); }
 }
 
-.floating { animation: float 3s ease-in-out infinite; }
+@keyframes cardFlip {
+  0%, 100% { transform: rotateY(0deg); }
+  50% { transform: rotateY(10deg); }
+}
+
+@keyframes glow {
+  from { box-shadow: 0 0 10px rgba(78,205,196,0.3); }
+  to { box-shadow: 0 0 20px rgba(78,205,196,0.6); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.03); opacity: 0.95; }
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.3; transform: scale(1.3); }
+}
+
+@keyframes colorShift {
+  0% { color: #FF6B6B; }
+  25% { color: #4ECDC4; }
+  50% { color: #FFD700; }
+  75% { color: #96CEB4; }
+  100% { color: #FF6B6B; }
+}
+
+@keyframes trophyGlow {
+  from { filter: drop-shadow(0 0 10px rgba(255,215,0,0.3)); }
+  to { filter: drop-shadow(0 0 30px rgba(255,215,0,0.8)); }
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes flash {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.floatBadge { animation: floatBadge 3s ease-in-out infinite; }
+.cardFlip { animation: cardFlip 6s ease-in-out infinite; border-radius: 15px; box-shadow: 0 10px 20px rgba(255,107,107,0.3); will-change: transform; }
+.glow { animation: glow 2s ease-in-out infinite alternate; border-radius: 15px; box-shadow: 0 0 20px rgba(78,205,196,0.3); }
+.pulse { animation: pulse 3s ease-in-out infinite; border-radius: 15px; }
+.typing { animation: typing 2s steps(30, end) 1; overflow: hidden; white-space: nowrap; }
+.star { position: absolute; border-radius: 50%; animation: twinkle 2s infinite; }
+.trophyGlow { animation: trophyGlow 3s ease-in-out infinite alternate; }
 </style>
 
 <!-- Holographic Effect Badge -->
@@ -54,7 +114,7 @@
 
 <!-- Interactive Visitor Counter with 3D Effect -->
 <div style="margin: 20px 0;">
-  <img src="https://komarev.com/ghpvc/?username=levidang306&style=for-the-badge&color=gradient&label=VISITORS+IN+THE+MATRIX" alt="3D Visitor Counter" class="floating"/>
+  <img src="https://komarev.com/ghpvc/?username=levidang306&style=for-the-badge&color=gradient&label=VISITORS+IN+THE+MATRIX" alt="3D Visitor Counter" class="floatBadge"/>
 </div>
 
 <!-- Interactive Social Links with Hover Effects -->
@@ -137,57 +197,22 @@
 <div style="perspective: 1000px; margin: 30px 0;">
   <img src="https://github-readme-stats.vercel.app/api?username=levidang306&show_icons=true&theme=synthwave&hide_border=true&bg_color=0D1117&icon_color=F8D847&text_color=F8D847&title_color=FF6B6B" 
        alt="3D GitHub Stats" 
-       style="
-         transform: rotateY(0deg);
-         animation: cardFlip 6s infinite ease-in-out;
-         border-radius: 15px;
-         box-shadow: 0 20px 40px rgba(255,107,107,0.3);
-       "/>
+       class="cardFlip"/>
 </div>
-
-<style>
-@keyframes cardFlip {
-  0%, 100% { transform: rotateY(0deg) rotateX(0deg); }
-  25% { transform: rotateY(10deg) rotateX(5deg); }
-  50% { transform: rotateY(0deg) rotateX(10deg); }
-  75% { transform: rotateY(-10deg) rotateX(5deg); }
-}
-</style>
 
 <!-- Holographic Languages Chart -->
 <div style="margin: 30px 0;">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=levidang306&layout=compact&theme=synthwave&hide_border=true&bg_color=0D1117&text_color=F8D847&title_color=4ECDC4" 
        alt="Holographic Languages" 
-       style="
-         border-radius: 15px;
-         box-shadow: 0 0 30px rgba(78,205,196,0.5);
-         animation: glow 2s ease-in-out infinite alternate;
-       "/>
+       class="glow"/>
 </div>
-
-<style>
-@keyframes glow {
-  from { box-shadow: 0 0 20px rgba(78,205,196,0.3); }
-  to { box-shadow: 0 0 40px rgba(78,205,196,0.8); }
-}
-</style>
 
 <!-- Interactive Streak Counter -->
 <div style="margin: 30px 0;">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=levidang306&theme=neon-dark&hide_border=true&background=0D1117&stroke=FF6B6B&ring=4ECDC4&fire=FFD700&currStreakLabel=F8D847" 
        alt="Interactive Streak" 
-       style="
-         border-radius: 15px;
-         animation: pulse 3s ease-in-out infinite;
-       "/>
+       class="pulse"/>
 </div>
-
-<style>
-@keyframes pulse {
-  0%, 100% { transform: scale(1); opacity: 1; }
-  50% { transform: scale(1.05); opacity: 0.9; }
-}
-</style>
 
 </div>
 
@@ -205,11 +230,11 @@
 <div style="text-align: center;">
   <h4 style="color: #FF6B6B;">💻 Languages</h4>
   <div>
-    <img src="https://skillicons.dev/icons?i=python" alt="Python" style="margin: 5px; transition: transform 0.3s, filter 0.3s;" onmouseover="this.style.transform='scale(1.2) rotateY(20deg)'; this.style.filter='drop-shadow(0 10px 20px rgba(255,107,107,0.5))'" onmouseout="this.style.transform='scale(1) rotateY(0deg)'; this.style.filter='none'"/>
-    <img src="https://skillicons.dev/icons?i=javascript" alt="JavaScript" style="margin: 5px; transition: transform 0.3s, filter 0.3s;" onmouseover="this.style.transform='scale(1.2) rotateY(20deg)'; this.style.filter='drop-shadow(0 10px 20px rgba(255,223,0,0.5))'" onmouseout="this.style.transform='scale(1) rotateY(0deg)'; this.style.filter='none'"/>
-    <img src="https://skillicons.dev/icons?i=typescript" alt="TypeScript" style="margin: 5px; transition: transform 0.3s, filter 0.3s;" onmouseover="this.style.transform='scale(1.2) rotateY(20deg)'; this.style.filter='drop-shadow(0 10px 20px rgba(0,122,204,0.5))'" onmouseout="this.style.transform='scale(1) rotateY(0deg)'; this.style.filter='none'"/>
-    <img src="https://skillicons.dev/icons?i=java" alt="Java" style="margin: 5px; transition: transform 0.3s, filter 0.3s;" onmouseover="this.style.transform='scale(1.2) rotateY(20deg)'; this.style.filter='drop-shadow(0 10px 20px rgba(237,110,68,0.5))'" onmouseout="this.style.transform='scale(1) rotateY(0deg)'; this.style.filter='none'"/>
-    <img src="https://skillicons.dev/icons?i=cpp" alt="C++" style="margin: 5px; transition: transform 0.3s, filter 0.3s;" onmouseover="this.style.transform='scale(1.2) rotateY(20deg)'; this.style.filter='drop-shadow(0 10px 20px rgba(0,150,255,0.5))'" onmouseout="this.style.transform='scale(1) rotateY(0deg)'; this.style.filter='none'"/>
+    <img src="https://skillicons.dev/icons?i=python" alt="Python" class="techIcon" style="margin: 5px;" data-shadow="rgba(255,107,107,0.5)"/>
+    <img src="https://skillicons.dev/icons?i=javascript" alt="JavaScript" class="techIcon" style="margin: 5px;" data-shadow="rgba(255,223,0,0.5)"/>
+    <img src="https://skillicons.dev/icons?i=typescript" alt="TypeScript" class="techIcon" style="margin: 5px;" data-shadow="rgba(0,122,204,0.5)"/>
+    <img src="https://skillicons.dev/icons?i=java" alt="Java" class="techIcon" style="margin: 5px;" data-shadow="rgba(237,110,68,0.5)"/>
+    <img src="https://skillicons.dev/icons?i=cpp" alt="C++" class="techIcon" style="margin: 5px;" data-shadow="rgba(0,150,255,0.5)"/>
   </div>
 </div>
 
@@ -217,9 +242,9 @@
 <div style="text-align: center;">
   <h4 style="color: #4ECDC4;">🛠️ Frameworks</h4>
   <div>
-    <img src="https://skillicons.dev/icons?i=nodejs" alt="Node.js" style="margin: 5px; transition: transform 0.3s, filter 0.3s;" onmouseover="this.style.transform='scale(1.2) rotateZ(15deg)'; this.style.filter='drop-shadow(0 10px 20px rgba(104,160,99,0.5))'" onmouseout="this.style.transform='scale(1) rotateZ(0deg)'; this.style.filter='none'"/>
-    <img src="https://skillicons.dev/icons?i=express" alt="Express" style="margin: 5px; transition: transform 0.3s, filter 0.3s;" onmouseover="this.style.transform='scale(1.2) rotateZ(15deg)'; this.style.filter='drop-shadow(0 10px 20px rgba(255,255,255,0.5))'" onmouseout="this.style.transform='scale(1) rotateZ(0deg)'; this.style.filter='none'"/>
-    <img src="https://skillicons.dev/icons?i=nestjs" alt="NestJS" style="margin: 5px; transition: transform 0.3s, filter 0.3s;" onmouseover="this.style.transform='scale(1.2) rotateZ(15deg)'; this.style.filter='drop-shadow(0 10px 20px rgba(234,45,99,0.5))'" onmouseout="this.style.transform='scale(1) rotateZ(0deg)'; this.style.filter='none'"/>
+    <img src="https://skillicons.dev/icons?i=nodejs" alt="Node.js" class="techIcon" style="margin: 5px;" data-shadow="rgba(104,160,99,0.5)"/>
+    <img src="https://skillicons.dev/icons?i=express" alt="Express" class="techIcon" style="margin: 5px;" data-shadow="rgba(255,255,255,0.5)"/>
+    <img src="https://skillicons.dev/icons?i=nestjs" alt="NestJS" class="techIcon" style="margin: 5px;" data-shadow="rgba(234,45,99,0.5)"/>
   </div>
 </div>
 
@@ -227,9 +252,9 @@
 <div style="text-align: center;">
   <h4 style="color: #FFD700;">🗄️ Databases</h4>
   <div>
-    <img src="https://skillicons.dev/icons?i=mongodb" alt="MongoDB" style="margin: 5px; transition: transform 0.3s, filter 0.3s;" onmouseover="this.style.transform='scale(1.2) rotateX(20deg)'; this.style.filter='drop-shadow(0 10px 20px rgba(77,169,86,0.5))'" onmouseout="this.style.transform='scale(1) rotateX(0deg)'; this.style.filter='none'"/>
-    <img src="https://skillicons.dev/icons?i=mysql" alt="MySQL" style="margin: 5px; transition: transform 0.3s, filter 0.3s;" onmouseover="this.style.transform='scale(1.2) rotateX(20deg)'; this.style.filter='drop-shadow(0 10px 20px rgba(0,117,143,0.5))'" onmouseout="this.style.transform='scale(1) rotateX(0deg)'; this.style.filter='none'"/>
-    <img src="https://skillicons.dev/icons?i=redis" alt="Redis" style="margin: 5px; transition: transform 0.3s, filter 0.3s;" onmouseover="this.style.transform='scale(1.2) rotateX(20deg)'; this.style.filter='drop-shadow(0 10px 20px rgba(220,61,50,0.5))'" onmouseout="this.style.transform='scale(1) rotateX(0deg)'; this.style.filter='none'"/>
+    <img src="https://skillicons.dev/icons?i=mongodb" alt="MongoDB" class="techIcon" style="margin: 5px;" data-shadow="rgba(77,169,86,0.5)"/>
+    <img src="https://skillicons.dev/icons?i=mysql" alt="MySQL" class="techIcon" style="margin: 5px;" data-shadow="rgba(0,117,143,0.5)"/>
+    <img src="https://skillicons.dev/icons?i=redis" alt="Redis" class="techIcon" style="margin: 5px;" data-shadow="rgba(220,61,50,0.5)"/>
   </div>
 </div>
 
@@ -237,14 +262,25 @@
 <div style="text-align: center;">
   <h4 style="color: #96CEB4;">☁️ Cloud & DevOps</h4>
   <div>
-    <img src="https://skillicons.dev/icons?i=aws" alt="AWS" style="margin: 5px; transition: transform 0.3s, filter 0.3s;" onmouseover="this.style.transform='scale(1.2)'; this.style.filter='drop-shadow(0 10px 20px rgba(255,159,0,0.5)) brightness(1.3)'" onmouseout="this.style.transform='scale(1)'; this.style.filter='none'"/>
-    <img src="https://skillicons.dev/icons?i=docker" alt="Docker" style="margin: 5px; transition: transform 0.3s, filter 0.3s;" onmouseover="this.style.transform='scale(1.2)'; this.style.filter='drop-shadow(0 10px 20px rgba(33,150,243,0.5)) brightness(1.3)'" onmouseout="this.style.transform='scale(1)'; this.style.filter='none'"/>
-    <img src="https://skillicons.dev/icons?i=kubernetes" alt="Kubernetes" style="margin: 5px; transition: transform 0.3s, filter 0.3s;" onmouseover="this.style.transform='scale(1.2)'; this.style.filter='drop-shadow(0 10px 20px rgba(50,109,230,0.5)) brightness(1.3)'" onmouseout="this.style.transform='scale(1)'; this.style.filter='none'"/>
-    <img src="https://skillicons.dev/icons?i=jenkins" alt="Jenkins" style="margin: 5px; transition: transform 0.3s, filter 0.3s;" onmouseover="this.style.transform='scale(1.2)'; this.style.filter='drop-shadow(0 10px 20px rgba(209,188,147,0.5)) brightness(1.3)'" onmouseout="this.style.transform='scale(1)'; this.style.filter='none'"/>
+    <img src="https://skillicons.dev/icons?i=aws" alt="AWS" class="techIcon" style="margin: 5px;" data-shadow="rgba(255,159,0,0.5)"/>
+    <img src="https://skillicons.dev/icons?i=docker" alt="Docker" class="techIcon" style="margin: 5px;" data-shadow="rgba(33,150,243,0.5)"/>
+    <img src="https://skillicons.dev/icons?i=kubernetes" alt="Kubernetes" class="techIcon" style="margin: 5px;" data-shadow="rgba(50,109,230,0.5)"/>
+    <img src="https://skillicons.dev/icons?i=jenkins" alt="Jenkins" class="techIcon" style="margin: 5px;" data-shadow="rgba(209,188,147,0.5)"/>
   </div>
 </div>
 
 </div>
+
+<style>
+.techIcon {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform, box-shadow;
+}
+.techIcon:hover {
+  transform: scale(1.2) rotateY(20deg);
+  box-shadow: 0 10px 20px var(--shadow, rgba(0,0,0,0.5));
+}
+</style>
 
 </div>
 
@@ -276,15 +312,8 @@
 <div align="center">
 
 <div style="margin: 30px 0;">
-  <img src="https://github-profile-trophy.vercel.app/?username=levidang306&theme=discord&no-frame=true&margin-w=15&title=Stars,Followers,Commits,Repositories,MultipleLang" alt="Interactive Trophies" style="animation: trophy-glow 3s ease-in-out infinite alternate;"/>
+  <img src="https://github-profile-trophy.vercel.app/?username=levidang306&theme=discord&no-frame=true&margin-w=15&title=Stars,Followers,Commits,Repositories,MultipleLang" alt="Interactive Trophies" class="trophyGlow"/>
 </div>
-
-<style>
-@keyframes trophy-glow {
-  from { filter: drop-shadow(0 0 10px rgba(255,215,0,0.3)); }
-  to { filter: drop-shadow(0 0 30px rgba(255,215,0,0.8)); }
-}
-</style>
 
 <!-- Click-to-Reveal Achievement Cards -->
 <details>
@@ -467,7 +496,7 @@
   <div style="position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(78,205,196,0.1) 0%, transparent 50%); animation: rotate 20s linear infinite; z-index: 1;"></div>
   
   <div style="position: relative; z-index: 2;">
-    <div style="font-size: 28px; margin-bottom: 15px; animation: float 3s ease-in-out infinite;">💭</div>
+    <div style="font-size: 28px; margin-bottom: 15px; animation: floatBadge 3s ease-in-out infinite;">💭</div>
     
     <blockquote style="font-size: 20px; font-style: italic; color: #4ECDC4; margin: 20px 0; line-height: 1.6; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">
       "First, solve the problem. Then, write the code."
@@ -486,17 +515,6 @@
   
 </div>
 
-<style>
-@keyframes rotate {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-}
-</style>
 </div>
 
 ---
@@ -553,13 +571,6 @@
 
 </div>
 
-<style>
-@keyframes flash {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.3; }
-}
-</style>
-
 </div>
 
 ---
@@ -570,7 +581,7 @@
 
 ### 🖼️ ASCII Art Animation
 
-<pre style="font-family: monospace; color: #4ECDC4; animation: colorShift 5s infinite;">
+<pre style="font-family: monospace; animation: colorShift 5s infinite;">
     ╔══════════════════════════════════════╗
     ║              NHAT LINH               ║
     ║            ◢■■■■■■■■◤                 ║
@@ -585,25 +596,15 @@
     ╚══════════════════════════════════════╝
 </pre>
 
-<style>
-@keyframes colorShift {
-  0% { color: #FF6B6B; }
-  25% { color: #4ECDC4; }
-  50% { color: #FFD700; }
-  75% { color: #96CEB4; }
-  100% { color: #FF6B6B; }
-}
-</style>
-
 ### 🌟 Interactive Constellation Map
 
 <div style="position: relative; width: 100%; height: 200px; background: linear-gradient(180deg, #000011 0%, #000033 100%); border-radius: 15px; overflow: hidden; margin: 20px 0;">
   <!-- Stars -->
-  <div style="position: absolute; top: 20%; left: 10%; width: 4px; height: 4px; background: #FFD700; border-radius: 50%; animation: twinkle 2s infinite;"></div>
-  <div style="position: absolute; top: 30%; left: 25%; width: 3px; height: 3px; background: #4ECDC4; border-radius: 50%; animation: twinkle 1.5s infinite 0.5s;"></div>
-  <div style="position: absolute; top: 15%; left: 40%; width: 5px; height: 5px; background: #FF6B6B; border-radius: 50%; animation: twinkle 3s infinite 1s;"></div>
-  <div style="position: absolute; top: 40%; left: 60%; width: 3px; height: 3px; background: #96CEB4; border-radius: 50%; animation: twinkle 2.5s infinite 1.5s;"></div>
-  <div style="position: absolute; top: 25%; left: 80%; width: 4px; height: 4px; background: #FFD700; border-radius: 50%; animation: twinkle 2s infinite 2s;"></div>
+  <div class="star" style="top: 20%; left: 10%; width: 4px; height: 4px; background: #FFD700; --delay: 0s;"></div>
+  <div class="star" style="top: 30%; left: 25%; width: 3px; height: 3px; background: #4ECDC4; --delay: 0.5s;"></div>
+  <div class="star" style="top: 15%; left: 40%; width: 5px; height: 5px; background: #FF6B6B; --delay: 1s;"></div>
+  <div class="star" style="top: 40%; left: 60%; width: 3px; height: 3px; background: #96CEB4; --delay: 1.5s;"></div>
+  <div class="star" style="top: 25%; left: 80%; width: 4px; height: 4px; background: #FFD700; --delay: 2s;"></div>
   
   <!-- Constellation Lines -->
   <svg style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
@@ -618,13 +619,6 @@
   </div>
 </div>
 
-<style>
-@keyframes twinkle {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.3; transform: scale(1.5); }
-}
-</style>
-
 </div>
 
 ---
@@ -637,14 +631,14 @@
 
 <div style="background: #000; border-radius: 10px; padding: 20px; margin: 20px 0; font-family: 'Courier New', monospace; color: #00FF00; text-align: left; max-width: 600px; margin: 20px auto;">
 <div style="color: #FFD700;">nhatlinh@github:~$ </div>
-<div style="animation: typing 4s steps(40, end) infinite;">whoami</div>
+<div class="typing">whoami</div>
 <div style="color: #4ECDC4;">
 > Backend Developer & AI Researcher<br>
 > Specializing in: Node.js, Python, AWS, Docker<br>
 > Current Status: Building the future with code 🚀
 </div>
 <div style="color: #FFD700; margin-top: 10px;">nhatlinh@github:~$ </div>
-<div style="animation: typing 4s steps(40, end) infinite 2s;">ls -la projects/</div>
+<div class="typing" style="animation-delay: 2s;">ls -la projects/</div>
 <div style="color: #96CEB4;">
 > microservices-architecture/<br>
 > ai-llm-research/<br>
@@ -652,7 +646,7 @@
 > interactive-readme/ ← You are here! 😄
 </div>
 <div style="color: #FFD700; margin-top: 10px;">nhatlinh@github:~$ </div>
-<div style="animation: typing 4s steps(40, end) infinite 4s;">echo "Thanks for visiting!" | figlet</div>
+<div class="typing" style="animation-delay: 4s;">echo "Thanks for visiting!" | figlet</div>
 <div style="color: #FF6B6B; font-size: 8px; line-height: 1;">
  _____ _                 _          __              
 |_   _| |__   __ _ _ __ | | _____  / _| ___  _ __   
@@ -667,13 +661,6 @@ __   __(_)___(_) |_(_)_ __   __ _| |
                             |___/   
 </div>
 </div>
-
-<style>
-@keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
-}
-</style>
 
 </div>
 
@@ -698,7 +685,7 @@ __   __(_)___(_) |_(_)_ __   __ _| |
     transition: all 0.3s ease;
     transform: perspective(1000px) rotateY(0deg);
     box-shadow: 0 10px 30px rgba(24,119,242,0.3);
-  " onmouseover="this.parentElement.style.transform='perspective(1000px) rotateY(15deg) scale(1.05)'" onmouseout="this.parentElement.style.transform='perspective(1000px) rotateY(0deg) scale(1)'">
+  " onmouseover="this.style.transform='perspective(1000px) rotateY(15deg) scale(1.05)'" onmouseout="this.style.transform='perspective(1000px) rotateY(0deg) scale(1)'">
     <div style="font-size: 24px;">📘</div>
     <div style="font-weight: bold;">Facebook</div>
     <div style="font-size: 12px;">Social Network</div>
@@ -716,7 +703,7 @@ __   __(_)___(_) |_(_)_ __   __ _| |
     transition: all 0.3s ease;
     transform: perspective(1000px) rotateY(0deg);
     box-shadow: 0 10px 30px rgba(51,51,51,0.3);
-  " onmouseover="this.parentElement.style.transform='perspective(1000px) rotateY(15deg) scale(1.05)'" onmouseout="this.parentElement.style.transform='perspective(1000px) rotateY(0deg) scale(1)'">
+  " onmouseover="this.style.transform='perspective(1000px) rotateY(15deg) scale(1.05)'" onmouseout="this.style.transform='perspective(1000px) rotateY(0deg) scale(1)'">
     <div style="font-size: 24px;">🐙</div>
     <div style="font-weight: bold;">GitHub</div>
     <div style="font-size: 12px;">Code Repository</div>
@@ -734,7 +721,7 @@ __   __(_)___(_) |_(_)_ __   __ _| |
     transition: all 0.3s ease;
     transform: perspective(1000px) rotateY(0deg);
     box-shadow: 0 10px 30px rgba(10,102,194,0.3);
-  " onmouseover="this.parentElement.style.transform='perspective(1000px) rotateY(15deg) scale(1.05)'" onmouseout="this.parentElement.style.transform='perspective(1000px) rotateY(0deg) scale(1)'">
+  " onmouseover="this.style.transform='perspective(1000px) rotateY(15deg) scale(1.05)'" onmouseout="this.style.transform='perspective(1000px) rotateY(0deg) scale(1)'">
     <div style="font-size: 24px;">💼</div>
     <div style="font-weight: bold;">LinkedIn</div>
     <div style="font-size: 12px;">Professional</div>
@@ -752,7 +739,7 @@ __   __(_)___(_) |_(_)_ __   __ _| |
     transition: all 0.3s ease;
     transform: perspective(1000px) rotateY(0deg);
     box-shadow: 0 10px 30px rgba(234,67,53,0.3);
-  " onmouseover="this.parentElement.style.transform='perspective(1000px) rotateY(15deg) scale(1.05)'" onmouseout="this.parentElement.style.transform='perspective(1000px) rotateY(0deg) scale(1)'">
+  " onmouseover="this.style.transform='perspective(1000px) rotateY(15deg) scale(1.05)'" onmouseout="this.style.transform='perspective(1000px) rotateY(0deg) scale(1)'">
     <div style="font-size: 24px;">📧</div>
     <div style="font-weight: bold;">Email</div>
     <div style="font-size: 12px;">Direct Contact</div>
@@ -819,7 +806,7 @@ __   __(_)___(_) |_(_)_ __   __ _| |
 
 <div style="margin: 30px 0; font-family: monospace; color: #666; font-size: 14px;">
   <p>🤖 This interactive README updates every 30 minutes with fresh content!</p>
-  <p>⚡ Last Updated: <strong>**September 25, 2025 at 14:26 UTC** *(Sep 25, 2025, 02:26 PM UTC)*</strong></p>
+  <p>⚡ Last Updated: <strong>September 25, 2025 at 14:26 UTC</strong></p>
   <p>🎮 Interactive elements work best on GitHub web interface</p>
 </div>
 
