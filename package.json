@@ -1,11 +1,12 @@
 {
-  "name": "levidang306-readme-updater",
-  "version": "1.0.0",
-  "description": "Automated README updater for levidang306's GitHub profile",
-  "main": ".github/scripts/update-readme.js",
+  "name": "levidang306-interactive-profile",
+  "version": "2.0.0",
+  "description": "Interactive GitHub profile with dynamic README and web portfolio",
+  "main": "server.js",
   "scripts": {
-    "update": "node .github/scripts/update-readme.js",
-    "test": "node .github/scripts/update-readme.js"
+    "start": "node server.js",
+    "dev": "node server.js",
+    "update": "node .github/scripts/update-readme-simple.js"
   },
   "repository": {
     "type": "git",
@@ -14,14 +15,15 @@
   "keywords": [
     "github",
     "readme",
-    "automation",
-    "wakatime",
-    "profile"
+    "interactive",
+    "portfolio",
+    "dynamic",
+    "games"
   ],
   "author": "Nhat Linh (levidang306)",
   "license": "MIT",
   "dependencies": {
-    "axios": "^1.6.0"
+    "express": "^4.18.2"
   },
   "engines": {
     "node": ">=18.0.0"
