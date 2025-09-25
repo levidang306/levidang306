@@ -2,8 +2,8 @@ name: Realtime Development Stats & Dynamic README
 
 on:
   schedule:
-    - cron: '30 * * * *'     # Run every hour at 30 minutes past
-    - cron: '0 */6 * * *'    # Every 6 hours for comprehensive stats
+    - cron: "30 * * * *" # Run every hour at 30 minutes past
+    - cron: "0 */6 * * *" # Every 6 hours for comprehensive stats
   push:
     branches: [main]
     paths-ignore:
@@ -55,14 +55,14 @@ jobs:
           SHOW_PROFILE_VIEWS: "True"
           SHOW_TOTAL_CODE_TIME: "True"
           COMMIT_BY_ME: "True"
-          
+
   # Comprehensive README Update
   update-comprehensive:
     name: Update Comprehensive Stats
     runs-on: ubuntu-latest
     needs: waka-readme
     timeout-minutes: 20
-    
+
     steps:
       - name: 🛒 Checkout Repository
         uses: actions/checkout@v4
@@ -108,20 +108,20 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN || secrets.GITHUB_TOKEN }}
         run: |
           mkdir -p .github/temp
-          
+
           # GitHub comprehensive activity
           echo "� Fetching comprehensive GitHub activity..."
           curl -H "Authorization: Bearer $GITHUB_TOKEN" \
                -H "Accept: application/vnd.github.v3+json" \
                "https://api.github.com/users/levidang306/events?per_page=50" \
                > .github/temp/github-activity.json
-          
+
           # GitHub user stats
           curl -H "Authorization: Bearer $GITHUB_TOKEN" \
                -H "Accept: application/vnd.github.v3+json" \
                "https://api.github.com/users/levidang306" \
                > .github/temp/github-user.json
-          
+
           # Repository list for diversity tracking
           curl -H "Authorization: Bearer $GITHUB_TOKEN" \
                -H "Accept: application/vnd.github.v3+json" \
@@ -155,7 +155,7 @@ jobs:
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add README.md
-          
+
           # Create comprehensive commit message
           commit_msg="🤖 Auto-update README: $(date -u +'%Y-%m-%d %H:%M UTC')
 
@@ -164,11 +164,11 @@ jobs:
           - Development time tracking (WakaTime)
           - Language & technology usage analytics
           - Inspirational tech quote
-          
+
           🔄 Powered by Advanced GitHub Actions Automation
           ⚡ Update Type: ${{ github.event.inputs.update_type || 'scheduled' }}
           🎯 Trigger: ${{ github.event_name }}"
-          
+
           git commit -m "$commit_msg"
           git push origin main
           echo "🎉 README successfully updated with comprehensive stats!"
@@ -192,7 +192,7 @@ jobs:
           echo "- ✅ Repository metrics & analytics" >> $GITHUB_STEP_SUMMARY
           echo "- ✅ Dynamic tech quotes & timestamps" >> $GITHUB_STEP_SUMMARY
           echo "- ✅ Language & technology insights" >> $GITHUB_STEP_SUMMARY
-          
+
       - name: 🧹 Cleanup
         if: always()
         run: |

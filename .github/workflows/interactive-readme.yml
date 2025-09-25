@@ -2,28 +2,28 @@ name: 🎮 Interactive 3D README Universe
 
 on:
   schedule:
-    - cron: '*/30 * * * *'  # Update every 30 minutes for real-time interactivity
-    - cron: '0 */2 * * *'   # Full refresh every 2 hours
+    - cron: "*/30 * * * *" # Update every 30 minutes for real-time interactivity
+    - cron: "0 */2 * * *" # Full refresh every 2 hours
   push:
     branches: [main]
     paths-ignore:
-      - 'README.md'  # Prevent recursive updates
+      - "README.md" # Prevent recursive updates
   workflow_dispatch:
     inputs:
       force_3d_update:
-        description: '🌌 Force 3D universe refresh'
+        description: "🌌 Force 3D universe refresh"
         required: false
-        default: 'false'
+        default: "false"
         type: boolean
       enable_games:
-        description: '🕹️ Enable interactive games'
+        description: "🕹️ Enable interactive games"
         required: false
-        default: 'true'
+        default: "true"
         type: boolean
       debug_interactive:
-        description: '🔍 Debug interactive elements'
+        description: "🔍 Debug interactive elements"
         required: false
-        default: 'false'
+        default: "false"
         type: boolean
 
 permissions:
@@ -37,7 +37,7 @@ jobs:
     name: 🚀 Deploy Interactive 3D README
     runs-on: ubuntu-latest
     timeout-minutes: 15
-    
+
     steps:
       - name: 🛸 Entering the Code Universe
         uses: actions/checkout@v4
@@ -48,8 +48,8 @@ jobs:
       - name: 🌌 Setting up 3D Environment
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
-          cache: 'npm'
+          node-version: "20"
+          cache: "npm"
 
       - name: ⚡ Installing Universe Dependencies
         run: |
@@ -99,9 +99,9 @@ jobs:
           🕹️ Interactive games calibrated
           🎨 Animation sequences refreshed
           💫 User experience optimized
-          
+
           🚀 Deployed by Interactive-README-Bot"
-          
+
           git push origin main
           echo "🎊 Interactive universe successfully deployed to main branch!"
 
@@ -124,7 +124,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: update-interactive-readme
     if: github.event.inputs.enable_games != 'false'
-    
+
     steps:
       - name: 🎮 Game Deployment Status
         run: |
@@ -141,7 +141,7 @@ jobs:
     name: 📊 Collect Advanced Metrics
     runs-on: ubuntu-latest
     needs: update-interactive-readme
-    
+
     steps:
       - name: 📈 Advanced Analytics Collection
         run: |

@@ -4,6 +4,7 @@
 <div align="center">
 
 <!-- Animated Holographic Header -->
+
 <img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=42&duration=3000&pause=1000&color=00D9FF&background=000000&center=true&vCenter=true&multiline=true&repeat=---
 
 ## 🎨 INTERACTIVE ASCII ART GALLERY
@@ -11,6 +12,7 @@
 <div align="center">
 
 ### 🖼️ ANIMATED ASCII ART
+
 ```
     ╔══════════════════════════════════════╗
     ║              NHAT LINH               ║
@@ -42,6 +44,7 @@
 [![Facebook](https://img.shields.io/badge/👥_FACEBOOK-1877F2?style=for-the-badge&logo=facebook&logoColor=white&labelColor=000000)](https://www.facebook.com/levidang2002/)
 
 ### 🎮 INTERACTIVE MESSAGE BOARD
+
 [![GitHub Discussions](https://img.shields.io/badge/💬_LEAVE_MESSAGE-00D9FF?style=for-the-badge&logo=github&logoColor=white&labelColor=000000)](https://github.com/levidang306/levidang306/discussions)
 [![Issues](https://img.shields.io/badge/🐛_REPORT_BUG-FF6B6B?style=for-the-badge&logo=github&logoColor=white&labelColor=000000)](https://github.com/levidang306/levidang306/issues)
 
@@ -54,15 +57,17 @@
 <div align="center">
 
 ### 📊 REAL-TIME METRICS
+
 [![Profile Views](https://komarev.com/ghpvc/?username=levidang306&style=for-the-badge&color=00D9FF&label=DIGITAL+VISITORS)](https://github.com/levidang306)
 [![Followers](https://img.shields.io/github/followers/levidang306?style=for-the-badge&color=4ECDC4&labelColor=000000&logo=github)](https://github.com/levidang306?tab=followers)
 [![Stars](https://img.shields.io/github/stars/levidang306?affiliations=OWNER&style=for-the-badge&color=FFD700&labelColor=000000&logo=github)](https://github.com/levidang306?tab=repositories)
 
 ### 🎯 CHALLENGE TRACKER
+
 ```
 🏆 Achievements Unlocked: 15/20
 🎮 Games Played: 847
-🧩 Puzzles Solved: 234  
+🧩 Puzzles Solved: 234
 🤝 Connections Made: 156
 📚 Articles Read: 1,203
 ```
@@ -77,9 +82,9 @@
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" alt="Digital Divider" />
 
-*💫 "Code is like poetry; it's all about expressing complex ideas with elegance." 💫*
+_💫 "Code is like poetry; it's all about expressing complex ideas with elegance." 💫_
 
-*🚀 Last Updated: September 25, 2025 at 12:59 UTC 🚀*
+_🚀 Last Updated: September 25, 2025 at 12:59 UTC 🚀_
 
 **⭐ STAR THIS REPO IF YOU ENJOYED THE INTERACTIVE EXPERIENCE! ⭐**
 
@@ -112,6 +117,7 @@
 <div align="center">
 
 ### 🐍 SNAKE GAME (Click to Play!)
+
 [![Snake Game](https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif)](https://levidang306.github.io/snake-game)
 
 **🎮 [CLICK HERE TO PLAY SNAKE GAME!](https://playsnake.org/) 🐍**
@@ -127,10 +133,11 @@
 <div align="center">
 
 ### 💻 DAILY CODING PUZZLE
+
 ```javascript
 // 🧩 Today's Challenge: What does this function return?
 function mystery(a, b) {
-    return (a ^ b) + (a & b) * 2;
+  return (a ^ b) + (a & b) * 2;
 }
 console.log(mystery(5, 3)); // ???
 ```
@@ -148,6 +155,7 @@ console.log(mystery(5, 3)); // ???
 <div align="center">
 
 ### 🤖 DID YOU KNOW?
+
 > **Random Tech Fact #42**: The first computer bug was an actual bug! In 1947, Grace Hopper found a moth stuck in a Harvard Mark II computer's relay.
 
 **🔄 Want another fact? Refresh the page!**
@@ -237,26 +245,31 @@ I'm a passionate **Back-end Developer** and **AI Researcher** with expertise in 
 ### 🚀 HOVER-RESPONSIVE TECHNOLOGY MATRIX 🚀
 
 **💻 PROGRAMMING LANGUAGES**
+
 <p align="center">
   <img src="https://skillicons.dev/icons?i=python,javascript,typescript,java,cpp,cs,php,c&theme=dark" alt="Programming Languages" />
 </p>
 
 **🛠️ FRAMEWORKS & LIBRARIES**
+
 <p align="center">
   <img src="https://skillicons.dev/icons?i=nodejs,express,nestjs,react,nextjs,vue,django,flask&theme=dark" alt="Frameworks" />
 </p>
 
 **🗄️ DATABASES & STORAGE**
+
 <p align="center">
   <img src="https://skillicons.dev/icons?i=mongodb,mysql,postgresql,redis,firebase,supabase&theme=dark" alt="Databases" />
 </p>
 
 **☁️ CLOUD & DEVOPS**
+
 <p align="center">
   <img src="https://skillicons.dev/icons?i=aws,docker,kubernetes,jenkins,nginx,linux,git,github&theme=dark" alt="DevOps" />
 </p>
 
 **🎨 DESIGN & FRONTEND**
+
 <p align="center">
   <img src="https://skillicons.dev/icons?i=html,css,sass,bootstrap,tailwind,figma&theme=dark" alt="Frontend" />
 </p>
@@ -270,13 +283,15 @@ I'm a passionate **Back-end Developer** and **AI Researcher** with expertise in 
 <div align="center">
 
 ### 🎧 CURRENTLY CODING TO:
+
 [![Spotify](https://spotify-github-profile.vercel.app/api/spotify-playing?username=levidang306&background_color=0d1117&border_color=00d9ff)](https://open.spotify.com/user/levidang306)
 
 **🎼 CODE COMMIT SYMPHONY**
+
 ```
 ♪ ♫ ♪ ♫ Recent Commits Melody ♫ ♪ ♫ ♪
 🎵 Push Event    ████████████ 🎹
-🎶 PR Merged    ██████████   🥁  
+🎶 PR Merged    ██████████   🥁
 🎼 Issue Fixed  ████████     🎸
 🎤 New Repo     ██████       🎺
 ```
@@ -301,6 +316,7 @@ I'm a passionate **Back-end Developer** and **AI Researcher** with expertise in 
 <div align="center">
 
 ### 💻 LIVE CODING TERMINAL
+
 ```bash
 nhatlinh@github:~$ whoami
 > Backend Developer & AI Researcher 🤖
@@ -323,17 +339,17 @@ nhatlinh@github:~$ cat skills.json
 }
 
 nhatlinh@github:~$ echo "Thanks for visiting!" | figlet
- _____ _                 _        __            
-|_   _| |__   __ _ _ __ | | _____ / _| ___  _ __ 
+ _____ _                 _        __
+|_   _| |__   __ _ _ __ | | _____ / _| ___  _ __
   | | | '_ \ / _` | '_ \| |/ / __| |_ / _ \| '__|
-  | | | | | | (_| | | | |   <\__ \  _| (_) | |   
-  |_| |_| |_|\__,_|_| |_|_|\_\___/_|  \___/|_|   
-__     ___     _ _   _             _ 
+  | | | | | | (_| | | | |   <\__ \  _| (_) | |
+  |_| |_| |_|\__,_|_| |_|_|\_\___/_|  \___/|_|
+__     ___     _ _   _             _
 \ \   / (_)___(_) |_(_)_ __   __ _| |
  \ \ / /| / __| | __| | '_ \ / _` | |
   \ V / | \__ \ | |_| | | | | (_| |_|
    \_/  |_|___/_|\__|_|_| |_|\__, (_)
-                             |___/   
+                             |___/
 ```
 
 </div>
@@ -347,16 +363,19 @@ __     ___     _ _   _             _
 ### 🕹️ CHOOSE YOUR ADVENTURE!
 
 **⭕ TIC TAC TOE - GitHub Style**
+
 ```
-   |   |   
+   |   |
 -----------
- X | O | X 
+ X | O | X
 -----------
- O |   | X 
+ O |   | X
 ```
+
 **[🎮 Play Full Game](https://playtictactoe.org/)**
 
 **🧩 CODE PUZZLE OF THE DAY**
+
 ```javascript
 function mystery(x) {
   return x * 2 + 3;
@@ -366,6 +385,7 @@ function mystery(x) {
 ```
 
 **🧠 MEMORY GAME**
+
 ```
 🟦 🟩 🟨 🟪
 Remember the sequence!
@@ -381,18 +401,19 @@ Current: Level 3 🏆
 <div align="center">
 
 ### ✨ THE CODING CONSTELLATION ✨
+
 ```
     ⭐ JavaScript          ⭐ Python
       \                  /
        \                /
-        ⭐ TypeScript ⭐ 
+        ⭐ TypeScript ⭐
            /        \
           /          \
     ⭐ Node.js      ⭐ React
          |            |
          |            |
     ⭐ MongoDB    ⭐ AWS ⭐
-         
+
 🌌 Navigate my coding universe! 🌌
 Each star represents mastery in that technology
 ```
