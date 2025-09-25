@@ -31,7 +31,7 @@ I'm a passionate **Back-end Developer** and **AI Researcher** with expertise in 
   - ☁️ Cloud Infrastructure & DevOps
   - 🎮 Gaming
 - 📫 **Reach me at**: [dangquangnhatlinh123@gmail.com](mailto:dangquangnhatlinh123@gmail.com)
-- 🌐 **Visit my website**: [b unkid.me](http://bunkid.me/)
+- 🌐 **Visit my website**: [bunkid.me](http://bunkid.me/)
 
 ---
 
@@ -45,16 +45,9 @@ I'm a passionate **Back-end Developer** and **AI Researcher** with expertise in 
 </p>
 
 ## ⏰ Code Time & Recent Activity
-### ⏰ This Week's Coding Time
+<!-- WAKATIME_STATS -->
 
-- 📊 WakaTime integration coming soon!
-- ⚡ Stay tuned for detailed coding statistics
-
-
-### 🔔 Recent GitHub Activity
-
-- 📊 Activity updates temporarily unavailable
-
+<!-- ACTIVITY_FEED -->
 
 ---
 
@@ -71,9 +64,9 @@ I'm a passionate **Back-end Developer** and **AI Researcher** with expertise in 
   <a href="https://www.typescriptlang.org/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="TypeScript" width="40" height="40"/></a>
   <a href="https://www.php.net"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="PHP" width="40" height="40"/></a>
   <a href="https://nodejs.org"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="Node.js" width="40" height="40"/></a>
-  <a href="https://expressjs.com"><img src="https://raw.githubusercontent.come/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="Express" width="40" height="40"/></a>
+  <a href="https://expressjs.com"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="Express" width="40" height="40"/></a>
   <a href="https://nestjs.com/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nestjs/nestjs-plain.svg" alt="NestJS" width="40" height="40"/></a>
-  <a href="https://www.mongodb.com/"><img src="https://raw. githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="MongoDB" width="40" height="40"/></a>
+  <a href="https://www.mongodb.com/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="MongoDB" width="40" height="40"/></a>
   <a href="https://www.mysql.com/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="MySQL" width="40" height="40"/></a>
   <a href="https://aws.amazon.com/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original.svg" alt="AWS" width="40" height="40"/></a>
   <a href="https://www.docker.com/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" alt="Docker" width="40" height="40"/></a>
@@ -128,9 +121,7 @@ I'm a passionate **Back-end Developer** and **AI Researcher** with expertise in 
 ---
 
 ## 💭 Random Tech Quote
-> *"Code never lies, comments sometimes do."*
->
-> **— Ron Jeffries**
+<!-- QUOTE -->
 
 ---
 
@@ -150,6 +141,6 @@ I'm a passionate **Back-end Developer** and **AI Researcher** with expertise in 
   <i>💫 "Code is like poetry; it's all about expressing complex ideas with elegance." 💫</i>
 </p>
 
-*Last Updated: September 25, 2025 at 12:59 UTC*
+*Last Updated: <!-- LAST_UPDATED -->*
 
 <!-- End of README -->

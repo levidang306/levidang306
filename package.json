@@ -1,5 +1,29 @@
 {
+  "name": "levidang306-readme-updater",
+  "version": "1.0.0",
+  "description": "Automated README updater for levidang306's GitHub profile",
+  "main": ".github/scripts/update-readme.js",
+  "scripts": {
+    "update": "node .github/scripts/update-readme.js",
+    "test": "node .github/scripts/update-readme.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/levidang306/levidang306.git"
+  },
+  "keywords": [
+    "github",
+    "readme",
+    "automation",
+    "wakatime",
+    "profile"
+  ],
+  "author": "Nhat Linh (levidang306)",
+  "license": "MIT",
   "dependencies": {
     "axios": "^1.6.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }

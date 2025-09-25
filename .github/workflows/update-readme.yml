@@ -1,42 +1,85 @@
-name: Update README
+name: Update README with Dynamic Content
 
 on:
   schedule:
-    - cron: '0 * * * *'  # Run every hour (adjust to '0 */6 * * *' for every 6 hours if rate limits are an issue)
+    - cron: '0 */5 * * *'  # Run every 5 hours for more real-time updates
   push:  # Update on commits to reflect activity
     branches: [main]
   workflow_dispatch:  # Allow manual trigger
 
+permissions:
+  contents: write  # Required for committing changes
+  actions: read
+  metadata: read
+
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 10  # Prevent hanging jobs
+    
     steps:
-      - uses: actions/checkout@v4
+      - name: 🛒 Checkout Repository
+        uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}  # For committing changes
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0  # Fetch full history for better stats
 
-      - name: Set up Node.js
+      - name: 🟢 Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+          cache: 'npm'
 
-      - name: Install dependencies
-        run: npm install axios rss-parser
+      - name: 📦 Install Dependencies
+        run: |
+          npm install axios
+          echo "✅ Dependencies installed successfully"
 
-      - name: Run update script
+      - name: 🔄 Run Update Script
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          WAKA_API_KEY: ${{ secrets.WAKA_API_KEY }}
-        run: node .github/scripts/update-readme.js
-
-      - name: Commit and push changes
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add README.md
-          if git diff --staged --quiet; then
-            echo "No changes to commit"
+          echo "🚀 Starting README update process..."
+          node .github/scripts/update-readme.js
+          echo "✨ Update process completed"
+
+      - name: 📝 Check for Changes
+        id: check_changes
+        run: |
+          if git diff --quiet README.md; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "ℹ️ No changes detected in README.md"
           else
-            git commit -m "🤖 Auto-update README: $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
-            git push
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "✅ Changes detected in README.md"
           fi
+
+      - name: 🚀 Commit and Push Changes
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add README.md
+          git commit -m "🤖 Auto-update README: $(date -u +'%Y-%m-%d %H:%M:%S UTC')
+
+          📊 Updated sections:
+          - Recent GitHub activity
+          - Coding time statistics  
+          - Inspirational quote
+          - Last updated timestamp
+          
+          🔄 Automated by GitHub Actions"
+          
+          git push origin main
+          echo "🎉 README successfully updated and pushed!"
+
+      - name: 📊 Summary
+        if: always()
+        run: |
+          echo "## 📋 Workflow Summary" >> $GITHUB_STEP_SUMMARY
+          echo "- **Trigger**: ${{ github.event_name }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Repository**: ${{ github.repository }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Branch**: ${{ github.ref_name }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Changes**: ${{ steps.check_changes.outputs.changed || 'not detected' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Timestamp**: $(date -u)" >> $GITHUB_STEP_SUMMARY
