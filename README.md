@@ -268,7 +268,6 @@
 
 ### ⚡ Real-time Development Stats
 
-
 <div style="text-align: center; margin: 20px 0; padding: 20px; background: rgba(255,107,107,0.1); border-radius: 10px; border: 2px solid rgba(255,107,107,0.3);">
   <h3 style="color: #FF6B6B;">📊 WakaTime Stats Temporarily Offline</h3>
   <p style="color: #4ECDC4;">The coding analytics are recharging! ⚡</p>
@@ -276,7 +275,6 @@
 </div>
 
 ### 🔥 Recent GitHub Activity
-
 
 <div style="text-align: center; margin: 20px 0;">
   <h3 style="color: #FF6B6B; margin-bottom: 10px;">🔥 Live Activity Feed</h3>
@@ -396,7 +394,6 @@
   </div>
 </div>
 </div>
-
 
 ### 🎲 Random Tech Quote
 
