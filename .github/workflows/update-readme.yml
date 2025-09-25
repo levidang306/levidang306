@@ -1,0 +1,42 @@
+name: Update README
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # Run every hour (adjust to '0 */6 * * *' for every 6 hours if rate limits are an issue)
+  push:  # Update on commits to reflect activity
+    branches: [main]
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}  # For committing changes
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install axios rss-parser
+
+      - name: Run update script
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          WAKA_API_KEY: ${{ secrets.WAKA_API_KEY }}
+        run: node .github/scripts/update-readme.js
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add README.md
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "🤖 Auto-update README: $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
+            git push
+          fi
