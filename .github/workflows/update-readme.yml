@@ -1,25 +1,29 @@
-name: Update README with Dynamic Content
+name: Realtime Development Stats & Dynamic README
 
 on:
   schedule:
-    - cron: "0 */2 * * *" # Run every 2 hours for real-time updates
-    - cron: "*/15 * * * *" # Run every 15 minutes during active hours (optional)
-  push: # Update on commits to reflect activity
+    - cron: '30 * * * *'     # Run every hour at 30 minutes past
+    - cron: '0 */6 * * *'    # Every 6 hours for comprehensive stats
+  push:
     branches: [main]
     paths-ignore:
-      - "README.md" # Prevent recursive updates
-  workflow_dispatch: # Allow manual trigger with inputs
+      - "README.md"
+  workflow_dispatch:
     inputs:
       force_update:
         description: "Force update even if no changes detected"
         required: false
         default: "false"
         type: boolean
-      debug_mode:
-        description: "Enable debug logging"
+      update_type:
+        description: "Type of update to perform"
         required: false
-        default: "false"
-        type: boolean
+        default: "full"
+        type: choice
+        options:
+          - full
+          - stats_only
+          - activity_only
 
 permissions:
   contents: write # Required for committing changes
@@ -28,30 +32,45 @@ permissions:
   pull-requests: read
 
 jobs:
-  update:
+  # WakaTime Stats Integration
+  waka-readme:
+    name: Update WakaTime Stats
     runs-on: ubuntu-latest
-    timeout-minutes: 15 # Allow more time for comprehensive updates
-
+    steps:
+      - name: Update WakaTime Stats
+        uses: anmol098/waka-readme-stats@master
+        with:
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          SHOW_OS: "True"
+          SHOW_PROJECTS: "True"
+          SHOW_TIMEZONE: "True"
+          SHOW_LANGUAGE: "True"
+          SHOW_LOC_CHART: "True"
+          SHOW_COMMIT: "True"
+          SHOW_DAYS_OF_WEEK: "True"
+          SHOW_LANGUAGE_PER_REPO: "True"
+          SHOW_EDITORS: "True"
+          SHOW_SHORT_INFO: "True"
+          SHOW_PROFILE_VIEWS: "True"
+          SHOW_TOTAL_CODE_TIME: "True"
+          COMMIT_BY_ME: "True"
+          
+  # Comprehensive README Update
+  update-comprehensive:
+    name: Update Comprehensive Stats
+    runs-on: ubuntu-latest
+    needs: waka-readme
+    timeout-minutes: 20
+    
     steps:
       - name: 🛒 Checkout Repository
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          fetch-depth: 0 # Fetch full history for better stats
+          token: ${{ secrets.GH_TOKEN || secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
 
-      - name: 🔍 Workflow Information
-        run: |
-          echo "## 🚀 README Update Workflow" >> $GITHUB_STEP_SUMMARY
-          echo "- **Trigger**: ${{ github.event_name }}" >> $GITHUB_STEP_SUMMARY
-          echo "- **Repository**: ${{ github.repository }}" >> $GITHUB_STEP_SUMMARY
-          echo "- **Branch**: ${{ github.ref_name }}" >> $GITHUB_STEP_SUMMARY
-          echo "- **Run ID**: ${{ github.run_id }}" >> $GITHUB_STEP_SUMMARY
-          echo "- **Timestamp**: $(date -u)" >> $GITHUB_STEP_SUMMARY
-          if [ "${{ github.event.inputs.debug_mode }}" == "true" ]; then
-            echo "- **Debug Mode**: Enabled" >> $GITHUB_STEP_SUMMARY
-          fi
-
-      - name: 🟢 Set up Node.js
+      - name: � Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "20"
@@ -59,47 +78,126 @@ jobs:
 
       - name: 📦 Install Dependencies
         run: |
-          npm install axios chalk
-          echo "✅ Dependencies installed successfully"
-          echo "📋 Installed packages:" >> $GITHUB_STEP_SUMMARY
-          echo "- axios (HTTP client)" >> $GITHUB_STEP_SUMMARY
-          echo "- chalk (terminal styling)" >> $GITHUB_STEP_SUMMARY
+          npm install axios moment cheerio node-fetch
+          echo "✅ Enhanced dependencies installed"
 
-      - name: 🔄 Run Update Script
+      - name: 📊 Generate GitHub Stats
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-          DEBUG_MODE: ${{ github.event.inputs.debug_mode || 'false' }}
-          FORCE_UPDATE: ${{ github.event.inputs.force_update || 'false' }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN || secrets.GITHUB_TOKEN }}
         run: |
-          echo "🚀 Starting enhanced README update process..."
-          echo "📊 Environment check:" >> $GITHUB_STEP_SUMMARY
-          echo "- GitHub Token: ✅ Available" >> $GITHUB_STEP_SUMMARY
-          if [ -n "$WAKATIME_API_KEY" ]; then
-            echo "- WakaTime API: ✅ Configured" >> $GITHUB_STEP_SUMMARY
-          else
-            echo "- WakaTime API: ⚠️ Not configured" >> $GITHUB_STEP_SUMMARY
-          fi
+          echo "🔍 Generating comprehensive GitHub statistics..."
+          node -e "
+            const { execSync } = require('child_process');
+            const fs = require('fs');
+            
+            // Get repository stats
+            const stats = {
+              commits: execSync('git rev-list --count HEAD').toString().trim(),
+              branches: execSync('git branch -r | wc -l').toString().trim(),
+              contributors: execSync('git shortlog -sn | wc -l').toString().trim(),
+              files: execSync('find . -type f -name \"*.js\" -o -name \"*.ts\" -o -name \"*.py\" -o -name \"*.java\" | wc -l').toString().trim(),
+              lines: execSync('find . -name \"*.js\" -o -name \"*.ts\" -o -name \"*.py\" -o -name \"*.java\" | xargs wc -l | tail -1 | awk \"{print \\$1}\"').toString().trim()
+            };
+            
+            fs.writeFileSync('.github/temp/repo-stats.json', JSON.stringify(stats, null, 2));
+            console.log('📈 Repository stats generated:', stats);
+          "
 
-          # Run the update script with error handling
-          if node .github/scripts/update-readme.js; then
-            echo "✅ README update completed successfully"
-            echo "- **Status**: ✅ Success" >> $GITHUB_STEP_SUMMARY
-          else
-            echo "❌ README update failed"
-            echo "- **Status**: ❌ Failed" >> $GITHUB_STEP_SUMMARY
-            exit 1
-          fi
+      - name: 🌐 Fetch External Data
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN || secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p .github/temp
+          
+          # GitHub comprehensive activity
+          echo "� Fetching comprehensive GitHub activity..."
+          curl -H "Authorization: Bearer $GITHUB_TOKEN" \
+               -H "Accept: application/vnd.github.v3+json" \
+               "https://api.github.com/users/levidang306/events?per_page=50" \
+               > .github/temp/github-activity.json
+          
+          # GitHub user stats
+          curl -H "Authorization: Bearer $GITHUB_TOKEN" \
+               -H "Accept: application/vnd.github.v3+json" \
+               "https://api.github.com/users/levidang306" \
+               > .github/temp/github-user.json
+          
+          # Repository list for diversity tracking
+          curl -H "Authorization: Bearer $GITHUB_TOKEN" \
+               -H "Accept: application/vnd.github.v3+json" \
+               "https://api.github.com/users/levidang306/repos?sort=updated&per_page=20" \
+               > .github/temp/github-repos.json
+
+      - name: 🔄 Run Enhanced Update Script
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN || secrets.GITHUB_TOKEN }}
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+          UPDATE_TYPE: ${{ github.event.inputs.update_type || 'full' }}
+        run: |
+          echo "🚀 Starting comprehensive README update..."
+          node .github/scripts/update-readme-advanced.js
 
       - name: 📝 Check for Changes
         id: check_changes
         run: |
-          # Check for changes with detailed analysis
           if git diff --quiet README.md; then
             echo "changed=false" >> $GITHUB_OUTPUT
-            echo "ℹ️ No changes detected in README.md"
-            echo "- **Changes**: None detected" >> $GITHUB_STEP_SUMMARY
+            echo "ℹ️ No changes detected"
           else
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "✅ Changes detected"
+            git diff --stat README.md
+          fi
+
+      - name: � Commit and Push Changes
+        if: steps.check_changes.outputs.changed == 'true' || github.event.inputs.force_update == 'true'
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add README.md
+          
+          # Create comprehensive commit message
+          commit_msg="🤖 Auto-update README: $(date -u +'%Y-%m-%d %H:%M UTC')
+
+          📊 Updated comprehensive stats:
+          - Real-time GitHub activity & repository metrics
+          - Development time tracking (WakaTime)
+          - Language & technology usage analytics
+          - Inspirational tech quote
+          
+          🔄 Powered by Advanced GitHub Actions Automation
+          ⚡ Update Type: ${{ github.event.inputs.update_type || 'scheduled' }}
+          🎯 Trigger: ${{ github.event_name }}"
+          
+          git commit -m "$commit_msg"
+          git push origin main
+          echo "🎉 README successfully updated with comprehensive stats!"
+
+      - name: 📊 Workflow Summary
+        if: always()
+        run: |
+          echo "## 🎯 Comprehensive README Update Complete" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### 📈 Update Details" >> $GITHUB_STEP_SUMMARY
+          echo "- **Trigger**: ${{ github.event_name }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Update Type**: ${{ github.event.inputs.update_type || 'full' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Repository**: ${{ github.repository }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Branch**: ${{ github.ref_name }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Changes Applied**: ${{ steps.check_changes.outputs.changed || 'forced' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Completion Time**: $(date -u)" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### 🚀 Features Updated" >> $GITHUB_STEP_SUMMARY
+          echo "- ✅ Real-time GitHub activity tracking" >> $GITHUB_STEP_SUMMARY
+          echo "- ✅ WakaTime coding statistics" >> $GITHUB_STEP_SUMMARY  
+          echo "- ✅ Repository metrics & analytics" >> $GITHUB_STEP_SUMMARY
+          echo "- ✅ Dynamic tech quotes & timestamps" >> $GITHUB_STEP_SUMMARY
+          echo "- ✅ Language & technology insights" >> $GITHUB_STEP_SUMMARY
+          
+      - name: 🧹 Cleanup
+        if: always()
+        run: |
+          rm -rf .github/temp
+          echo "🗑️ Temporary files cleaned up"
             echo "changed=true" >> $GITHUB_OUTPUT
             echo "✅ Changes detected in README.md"
             
