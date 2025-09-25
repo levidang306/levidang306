@@ -31,84 +31,6 @@
   </h1>
 </div>
 
-<!-- Consolidated Styles -->
-<style>
-@keyframes gradient {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-@keyframes rotate3d {
-  0% { transform: rotateY(0deg) rotateX(0deg); }
-  25% { transform: rotateY(90deg) rotateX(10deg); }
-  50% { transform: rotateY(180deg) rotateX(0deg); }
-  75% { transform: rotateY(270deg) rotateX(-10deg); }
-  100% { transform: rotateY(360deg) rotateX(0deg); }
-}
-
-@keyframes floatBadge {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-15px); }
-}
-
-@keyframes cardFlip {
-  0%, 100% { transform: rotateY(0deg); }
-  50% { transform: rotateY(10deg); }
-}
-
-@keyframes glow {
-  from { box-shadow: 0 0 10px rgba(78,205,196,0.3); }
-  to { box-shadow: 0 0 20px rgba(78,205,196,0.6); }
-}
-
-@keyframes pulse {
-  0%, 100% { transform: scale(1); opacity: 1; }
-  50% { transform: scale(1.03); opacity: 0.95; }
-}
-
-@keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
-}
-
-@keyframes twinkle {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.3; transform: scale(1.3); }
-}
-
-@keyframes colorShift {
-  0% { color: #FF6B6B; }
-  25% { color: #4ECDC4; }
-  50% { color: #FFD700; }
-  75% { color: #96CEB4; }
-  100% { color: #FF6B6B; }
-}
-
-@keyframes trophyGlow {
-  from { filter: drop-shadow(0 0 10px rgba(255,215,0,0.3)); }
-  to { filter: drop-shadow(0 0 30px rgba(255,215,0,0.8)); }
-}
-
-@keyframes rotate {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-@keyframes flash {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.3; }
-}
-
-.floatBadge { animation: floatBadge 3s ease-in-out infinite; }
-.cardFlip { animation: cardFlip 6s ease-in-out infinite; border-radius: 15px; box-shadow: 0 10px 20px rgba(255,107,107,0.3); will-change: transform; }
-.glow { animation: glow 2s ease-in-out infinite alternate; border-radius: 15px; box-shadow: 0 0 20px rgba(78,205,196,0.3); }
-.pulse { animation: pulse 3s ease-in-out infinite; border-radius: 15px; }
-.typing { animation: typing 2s steps(30, end) 1; overflow: hidden; white-space: nowrap; }
-.star { position: absolute; border-radius: 50%; animation: twinkle 2s infinite; }
-.trophyGlow { animation: trophyGlow 3s ease-in-out infinite alternate; }
-</style>
-
 <!-- Holographic Effect Badge -->
 <img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=25&duration=3000&pause=1000&color=00FF88&background=FF000000&center=true&vCenter=true&multiline=true&width=800&height=100&lines=🚀+Back-end+Developer+%26+AI+Wizard;🌌+Building+the+Future+with+Code;🎮+Interactive+Profile+Experience!" alt="Holographic Typing"/>
 
@@ -270,17 +192,6 @@
 </div>
 
 </div>
-
-<style>
-.techIcon {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  will-change: transform, box-shadow;
-}
-.techIcon:hover {
-  transform: scale(1.2) rotateY(20deg);
-  box-shadow: 0 10px 20px var(--shadow, rgba(0,0,0,0.5));
-}
-</style>
 
 </div>
 
