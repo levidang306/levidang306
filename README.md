@@ -44,6 +44,9 @@ I'm a passionate **Back-end Developer** and **AI Researcher** with expertise in 
   <a href="https://www.linkedin.com/in/levi-dang/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 </p>
 
+## ⏰ Code Time
+<!-- CODE_TIME -->
+
 ---
 
 ## 🛠️ Languages & Tools
@@ -125,6 +128,12 @@ I'm a passionate **Back-end Developer** and **AI Researcher** with expertise in 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" alt="Divider" />
 </p>
+
+<p align="center">
+  <i>"Code is like poetry; it’s all about expressing complex ideas with elegance."</i>
+</p>
+
+*Last Updated: <!-- LAST_UPDATED -->*
 
 <p align="center">
   <i>"Code is like poetry; it’s all about expressing complex ideas with elegance."</i>
