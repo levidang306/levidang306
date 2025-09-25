@@ -2,44 +2,43 @@ name: Update README with Dynamic Content
 
 on:
   schedule:
-    - cron: '0 */2 * * *'  # Run every 2 hours for real-time updates
-    - cron: '*/15 * * * *'  # Run every 15 minutes during active hours (optional)
-  push:  # Update on commits to reflect activity
+    - cron: "0 */2 * * *" # Run every 2 hours for real-time updates
+    - cron: "*/15 * * * *" # Run every 15 minutes during active hours (optional)
+  push: # Update on commits to reflect activity
     branches: [main]
     paths-ignore:
-      - 'README.md'  # Prevent recursive updates
-  workflow_dispatch:  # Allow manual trigger with inputs
+      - "README.md" # Prevent recursive updates
+  workflow_dispatch: # Allow manual trigger with inputs
     inputs:
       force_update:
-        description: 'Force update even if no changes detected'
+        description: "Force update even if no changes detected"
         required: false
-        default: 'false'
+        default: "false"
         type: boolean
       debug_mode:
-        description: 'Enable debug logging'
+        description: "Enable debug logging"
         required: false
-        default: 'false'
+        default: "false"
         type: boolean
 
 permissions:
-  contents: write  # Required for committing changes
+  contents: write # Required for committing changes
   actions: read
-  metadata: read
-  issues: read     # For better GitHub activity tracking
+  issues: read # For better GitHub activity tracking
   pull-requests: read
 
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 15  # Allow more time for comprehensive updates
-    
+    timeout-minutes: 15 # Allow more time for comprehensive updates
+
     steps:
       - name: 🛒 Checkout Repository
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          fetch-depth: 0  # Fetch full history for better stats
-          
+          fetch-depth: 0 # Fetch full history for better stats
+
       - name: 🔍 Workflow Information
         run: |
           echo "## 🚀 README Update Workflow" >> $GITHUB_STEP_SUMMARY
@@ -55,8 +54,8 @@ jobs:
       - name: 🟢 Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
-          cache: 'npm'
+          node-version: "20"
+          cache: "npm"
 
       - name: 📦 Install Dependencies
         run: |
@@ -81,7 +80,7 @@ jobs:
           else
             echo "- WakaTime API: ⚠️ Not configured" >> $GITHUB_STEP_SUMMARY
           fi
-          
+
           # Run the update script with error handling
           if node .github/scripts/update-readme.js; then
             echo "✅ README update completed successfully"
@@ -116,7 +115,7 @@ jobs:
             git diff README.md | head -20 >> $GITHUB_STEP_SUMMARY
             echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
           fi
-          
+
           # Force update if requested
           if [ "${{ github.event.inputs.force_update }}" == "true" ]; then
             echo "changed=true" >> $GITHUB_OUTPUT
@@ -129,7 +128,7 @@ jobs:
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          
+
           # Add README.md with error handling
           if git add README.md; then
             echo "✅ README.md staged successfully"
@@ -137,7 +136,7 @@ jobs:
             echo "❌ Failed to stage README.md"
             exit 1
           fi
-          
+
           # Create enhanced commit message
           COMMIT_MSG="🤖 Auto-update README: $(date -u +'%Y-%m-%d %H:%M:%S UTC')
 
@@ -147,11 +146,11 @@ jobs:
           - 💭 Fresh inspirational tech quote
           - 🕒 Precise timestamp with timezone
           - 📈 Comprehensive development environment tracking
-          
+
           🔄 **Automation**: GitHub Actions workflow
           🎯 **Trigger**: ${{ github.event_name }}
           🆔 **Run ID**: ${{ github.run_id }}"
-          
+
           if git commit -m "$COMMIT_MSG"; then
             echo "✅ Changes committed successfully"
             
@@ -187,17 +186,17 @@ jobs:
           echo "| Changes Detected | ${{ steps.check_changes.outputs.changed || 'false' }} |" >> $GITHUB_STEP_SUMMARY
           echo "| Total Runtime | ${{ steps.update_start_time.outputs.duration || 'N/A' }} |" >> $GITHUB_STEP_SUMMARY
           echo "| Next Scheduled Run | Every 2 hours |" >> $GITHUB_STEP_SUMMARY
-          
+
           echo "## 🔗 Quick Links" >> $GITHUB_STEP_SUMMARY
           echo "- [📄 Updated README](https://github.com/${{ github.repository }}#readme)" >> $GITHUB_STEP_SUMMARY
           echo "- [⚙️ Workflow File](https://github.com/${{ github.repository }}/blob/main/.github/workflows/update-readme.yml)" >> $GITHUB_STEP_SUMMARY
           echo "- [📜 Action History](https://github.com/${{ github.repository }}/actions/workflows/update-readme.yml)" >> $GITHUB_STEP_SUMMARY
           echo "- [🔧 Manual Trigger](https://github.com/${{ github.repository }}/actions/workflows/update-readme.yml)" >> $GITHUB_STEP_SUMMARY
-          
+
           if [ "${{ job.status }}" == "success" ]; then
             echo "✅ **Workflow completed successfully!**" >> $GITHUB_STEP_SUMMARY
           else
             echo "❌ **Workflow encountered issues. Check logs above.**" >> $GITHUB_STEP_SUMMARY
           fi
-          
+
           echo "🕒 **Completed at**: $(date -u)" >> $GITHUB_STEP_SUMMARY
