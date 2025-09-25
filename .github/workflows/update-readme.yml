@@ -2,20 +2,36 @@ name: Update README with Dynamic Content
 
 on:
   schedule:
-    - cron: '0 */5 * * *'  # Run every 5 hours for more real-time updates
+    - cron: '0 */2 * * *'  # Run every 2 hours for real-time updates
+    - cron: '*/15 * * * *'  # Run every 15 minutes during active hours (optional)
   push:  # Update on commits to reflect activity
     branches: [main]
-  workflow_dispatch:  # Allow manual trigger
+    paths-ignore:
+      - 'README.md'  # Prevent recursive updates
+  workflow_dispatch:  # Allow manual trigger with inputs
+    inputs:
+      force_update:
+        description: 'Force update even if no changes detected'
+        required: false
+        default: 'false'
+        type: boolean
+      debug_mode:
+        description: 'Enable debug logging'
+        required: false
+        default: 'false'
+        type: boolean
 
 permissions:
   contents: write  # Required for committing changes
   actions: read
   metadata: read
+  issues: read     # For better GitHub activity tracking
+  pull-requests: read
 
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 10  # Prevent hanging jobs
+    timeout-minutes: 15  # Allow more time for comprehensive updates
     
     steps:
       - name: 🛒 Checkout Repository
@@ -23,6 +39,18 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0  # Fetch full history for better stats
+          
+      - name: 🔍 Workflow Information
+        run: |
+          echo "## 🚀 README Update Workflow" >> $GITHUB_STEP_SUMMARY
+          echo "- **Trigger**: ${{ github.event_name }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Repository**: ${{ github.repository }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Branch**: ${{ github.ref_name }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Run ID**: ${{ github.run_id }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Timestamp**: $(date -u)" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ github.event.inputs.debug_mode }}" == "true" ]; then
+            echo "- **Debug Mode**: Enabled" >> $GITHUB_STEP_SUMMARY
+          fi
 
       - name: 🟢 Set up Node.js
         uses: actions/setup-node@v4
@@ -32,27 +60,68 @@ jobs:
 
       - name: 📦 Install Dependencies
         run: |
-          npm install axios
+          npm install axios chalk
           echo "✅ Dependencies installed successfully"
+          echo "📋 Installed packages:" >> $GITHUB_STEP_SUMMARY
+          echo "- axios (HTTP client)" >> $GITHUB_STEP_SUMMARY
+          echo "- chalk (terminal styling)" >> $GITHUB_STEP_SUMMARY
 
       - name: 🔄 Run Update Script
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+          DEBUG_MODE: ${{ github.event.inputs.debug_mode || 'false' }}
+          FORCE_UPDATE: ${{ github.event.inputs.force_update || 'false' }}
         run: |
-          echo "🚀 Starting README update process..."
-          node .github/scripts/update-readme.js
-          echo "✨ Update process completed"
+          echo "🚀 Starting enhanced README update process..."
+          echo "📊 Environment check:" >> $GITHUB_STEP_SUMMARY
+          echo "- GitHub Token: ✅ Available" >> $GITHUB_STEP_SUMMARY
+          if [ -n "$WAKATIME_API_KEY" ]; then
+            echo "- WakaTime API: ✅ Configured" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "- WakaTime API: ⚠️ Not configured" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          # Run the update script with error handling
+          if node .github/scripts/update-readme.js; then
+            echo "✅ README update completed successfully"
+            echo "- **Status**: ✅ Success" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "❌ README update failed"
+            echo "- **Status**: ❌ Failed" >> $GITHUB_STEP_SUMMARY
+            exit 1
+          fi
 
       - name: 📝 Check for Changes
         id: check_changes
         run: |
+          # Check for changes with detailed analysis
           if git diff --quiet README.md; then
             echo "changed=false" >> $GITHUB_OUTPUT
             echo "ℹ️ No changes detected in README.md"
+            echo "- **Changes**: None detected" >> $GITHUB_STEP_SUMMARY
           else
             echo "changed=true" >> $GITHUB_OUTPUT
             echo "✅ Changes detected in README.md"
+            
+            # Show detailed diff stats
+            echo "📊 **Change Statistics**:" >> $GITHUB_STEP_SUMMARY
+            echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+            git diff --stat README.md >> $GITHUB_STEP_SUMMARY
+            echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+            
+            # Show preview of changes (first 10 lines)
+            echo "🔍 **Preview of Changes**:" >> $GITHUB_STEP_SUMMARY
+            echo "\`\`\`diff" >> $GITHUB_STEP_SUMMARY
+            git diff README.md | head -20 >> $GITHUB_STEP_SUMMARY
+            echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          # Force update if requested
+          if [ "${{ github.event.inputs.force_update }}" == "true" ]; then
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "🔄 Force update requested"
+            echo "- **Force Update**: ✅ Enabled" >> $GITHUB_STEP_SUMMARY
           fi
 
       - name: 🚀 Commit and Push Changes
@@ -60,26 +129,75 @@ jobs:
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add README.md
-          git commit -m "🤖 Auto-update README: $(date -u +'%Y-%m-%d %H:%M:%S UTC')
-
-          📊 Updated sections:
-          - Recent GitHub activity
-          - Coding time statistics  
-          - Inspirational quote
-          - Last updated timestamp
           
-          🔄 Automated by GitHub Actions"
+          # Add README.md with error handling
+          if git add README.md; then
+            echo "✅ README.md staged successfully"
+          else
+            echo "❌ Failed to stage README.md"
+            exit 1
+          fi
           
-          git push origin main
-          echo "🎉 README successfully updated and pushed!"
+          # Create enhanced commit message
+          COMMIT_MSG="🤖 Auto-update README: $(date -u +'%Y-%m-%d %H:%M:%S UTC')
 
-      - name: 📊 Summary
+          📊 **Updated Content**:
+          - ⚡ Real-time GitHub activity and statistics
+          - ⏰ Enhanced WakaTime coding metrics with visual progress bars
+          - 💭 Fresh inspirational tech quote
+          - 🕒 Precise timestamp with timezone
+          - 📈 Comprehensive development environment tracking
+          
+          🔄 **Automation**: GitHub Actions workflow
+          🎯 **Trigger**: ${{ github.event_name }}
+          🆔 **Run ID**: ${{ github.run_id }}"
+          
+          if git commit -m "$COMMIT_MSG"; then
+            echo "✅ Changes committed successfully"
+            
+            # Push with retry mechanism
+            for i in {1..3}; do
+              if git push origin main; then
+                echo "🎉 README successfully updated and pushed!"
+                echo "- **Commit**: ✅ Pushed to main branch" >> $GITHUB_STEP_SUMMARY
+                echo "- **Attempts**: $i/3" >> $GITHUB_STEP_SUMMARY
+                break
+              else
+                echo "⚠️ Push attempt $i failed, retrying..."
+                sleep 2
+                if [ $i -eq 3 ]; then
+                  echo "❌ All push attempts failed"
+                  echo "- **Commit**: ❌ Push failed after 3 attempts" >> $GITHUB_STEP_SUMMARY
+                  exit 1
+                fi
+              fi
+            done
+          else
+            echo "❌ Failed to commit changes"
+            exit 1
+          fi
+
+      - name: 📊 Workflow Summary
         if: always()
         run: |
-          echo "## 📋 Workflow Summary" >> $GITHUB_STEP_SUMMARY
-          echo "- **Trigger**: ${{ github.event_name }}" >> $GITHUB_STEP_SUMMARY
-          echo "- **Repository**: ${{ github.repository }}" >> $GITHUB_STEP_SUMMARY
-          echo "- **Branch**: ${{ github.ref_name }}" >> $GITHUB_STEP_SUMMARY
-          echo "- **Changes**: ${{ steps.check_changes.outputs.changed || 'not detected' }}" >> $GITHUB_STEP_SUMMARY
-          echo "- **Timestamp**: $(date -u)" >> $GITHUB_STEP_SUMMARY
+          echo "## 🎯 Final Summary" >> $GITHUB_STEP_SUMMARY
+          echo "| Metric | Value |" >> $GITHUB_STEP_SUMMARY
+          echo "|--------|--------|" >> $GITHUB_STEP_SUMMARY
+          echo "| Workflow Status | ${{ job.status }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Changes Detected | ${{ steps.check_changes.outputs.changed || 'false' }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Total Runtime | ${{ steps.update_start_time.outputs.duration || 'N/A' }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Next Scheduled Run | Every 2 hours |" >> $GITHUB_STEP_SUMMARY
+          
+          echo "## 🔗 Quick Links" >> $GITHUB_STEP_SUMMARY
+          echo "- [📄 Updated README](https://github.com/${{ github.repository }}#readme)" >> $GITHUB_STEP_SUMMARY
+          echo "- [⚙️ Workflow File](https://github.com/${{ github.repository }}/blob/main/.github/workflows/update-readme.yml)" >> $GITHUB_STEP_SUMMARY
+          echo "- [📜 Action History](https://github.com/${{ github.repository }}/actions/workflows/update-readme.yml)" >> $GITHUB_STEP_SUMMARY
+          echo "- [🔧 Manual Trigger](https://github.com/${{ github.repository }}/actions/workflows/update-readme.yml)" >> $GITHUB_STEP_SUMMARY
+          
+          if [ "${{ job.status }}" == "success" ]; then
+            echo "✅ **Workflow completed successfully!**" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "❌ **Workflow encountered issues. Check logs above.**" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          echo "🕒 **Completed at**: $(date -u)" >> $GITHUB_STEP_SUMMARY

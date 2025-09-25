@@ -45,6 +45,7 @@ I'm a passionate **Back-end Developer** and **AI Researcher** with expertise in 
 </p>
 
 ## ⏰ Code Time & Recent Activity
+
 <!-- WAKATIME_STATS -->
 
 <!-- ACTIVITY_FEED -->

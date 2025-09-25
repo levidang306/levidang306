@@ -20,7 +20,7 @@
 
 I'm a passionate **Back-end Developer** and **AI Researcher** with expertise in building scalable systems and exploring cutting-edge AI technologies, including Large Language Models (LLMs). I specialize in optimizing development workflows through **DevOps** practices using **AWS** and **CI/CD pipelines**. When I'm not coding, I enjoy diving into **operating systems** or playing **computer games** 🎮.
 
-- 🔭 **Currently working on**: 
+- 🔭 **Currently working on**:
   - AI research focused on LLMs and AI engineering. <!-- Add specific AI projects or repos here -->
   - Advanced backend development with microservices and scalable architectures. <!-- Add specific backend projects -->
   - DevOps workflows with AWS (EC2, S3, Lambda, etc.) and CI/CD pipelines using GitHub Actions and Jenkins. <!-- Add specific DevOps projects -->
@@ -45,16 +45,15 @@ I'm a passionate **Back-end Developer** and **AI Researcher** with expertise in 
 </p>
 
 ## ⏰ Code Time & Recent Activity
+
 ### ⏰ This Week's Coding Time
 
 - 📊 WakaTime integration coming soon!
 - ⚡ Stay tuned for detailed coding statistics
 
-
 ### 🔔 Recent GitHub Activity
 
 - 📊 Activity updates temporarily unavailable
-
 
 ---
 
@@ -90,6 +89,7 @@ I'm a passionate **Back-end Developer** and **AI Researcher** with expertise in 
 ## 🚀 Current Projects
 
 <!-- Add specific project details or GitHub repo links -->
+
 - **AI Research**: Exploring Large Language Models (LLMs) and AI engineering to build intelligent, scalable systems.
 - **Backend Development**: Designing microservices architectures with **NestJS**, **Node.js**, and **MongoDB/MySQL**.
 - **DevOps**: Streamlining workflows with **AWS** (EC2, S3, RDS, Lambda) and CI/CD pipelines using **GitHub Actions**, **Jenkins**, and **Docker**.
@@ -123,12 +123,14 @@ I'm a passionate **Back-end Developer** and **AI Researcher** with expertise in 
 ## 📈 Activity Graph
 
 <!-- Change theme (e.g., dracula, github-dark) or adjust parameters -->
+
 [![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=levidang306&bg_color=ffffff&color=000000&line=9be9a8&point=40c463&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
 ---
 
 ## 💭 Random Tech Quote
-> *"Code never lies, comments sometimes do."*
+
+> _"Code never lies, comments sometimes do."_
 >
 > **— Ron Jeffries**
 
@@ -137,6 +139,7 @@ I'm a passionate **Back-end Developer** and **AI Researcher** with expertise in 
 ## 📝 Blog & Contributions
 
 <!-- Add specific blog posts or contribution links -->
+
 - Check out my latest blog posts on [bunkid.me](http://bunkid.me/) for insights on AI, backend development, and DevOps.
 - Explore my open-source contributions on [GitHub](https://github.com/levidang306).
 
@@ -150,6 +153,6 @@ I'm a passionate **Back-end Developer** and **AI Researcher** with expertise in 
   <i>💫 "Code is like poetry; it's all about expressing complex ideas with elegance." 💫</i>
 </p>
 
-*Last Updated: September 25, 2025 at 12:59 UTC*
+_Last Updated: September 25, 2025 at 12:59 UTC_
 
 <!-- End of README -->
