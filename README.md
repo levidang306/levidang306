@@ -148,60 +148,6 @@
 [<img src="https://spotify-playing-git-master.j2teamnnl.vercel.app/api/spotify-playing" alt="J2TeamNNL Spotify Playing" width="350" />](https://open.spotify.com/user/31ghget3jspvgpjwbv5pcwli3smab)
 
 
-### 🎼 Code Commit Symphony
-
-<div style="margin: 30px 0;">
-  <!-- GitHub Activity Graph with Music Theme -->
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=levidang306&bg_color=0D1117&color=4ECDC4&line=FF6B6B&point=FFD700&area=true&hide_border=true&theme=react-dark" alt="Coding Symphony" style="border-radius: 15px; box-shadow: 0 0 30px rgba(255,107,107,0.3);"/>
-</div>
-
-</div>
-
----
-
-## 🏆 Interactive Achievement Gallery
-
-<div align="center">
-
-<div style="margin: 30px 0;">
-  <img src="https://github-profile-trophy.vercel.app/?username=levidang306&theme=discord&no-frame=true&margin-w=15&title=Stars,Followers,Commits,Repositories,MultipleLang" alt="Interactive Trophies" class="trophyGlow"/>
-</div>
-
-<!-- Click-to-Reveal Achievement Cards -->
-<details>
-<summary>🎖️ Click to Unlock Secret Achievements! 🎖️</summary>
-
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin: 20px 0;">
-
-<div style="background: linear-gradient(45deg, #FF6B6B, #4ECDC4); padding: 15px; border-radius: 10px; text-align: center;">
-  <h4>🚀 Code Warrior</h4>
-  <p>Mastered 5+ Programming Languages</p>
-  <div style="color: #FFD700;">⭐⭐⭐⭐⭐</div>
-</div>
-
-<div style="background: linear-gradient(45deg, #4ECDC4, #45B7D1); padding: 15px; border-radius: 10px; text-align: center;">
-  <h4>🌐 Backend Wizard</h4>
-  <p>Built Scalable Microservices</p>
-  <div style="color: #FFD700;">⭐⭐⭐⭐⭐</div>
-</div>
-
-<div style="background: linear-gradient(45deg, #45B7D1, #96CEB4); padding: 15px; border-radius: 10px; text-align: center;">
-  <h4>☁️ Cloud Architect</h4>
-  <p>Deployed on AWS & Docker</p>
-  <div style="color: #FFD700;">⭐⭐⭐⭐⭐</div>
-</div>
-
-<div style="background: linear-gradient(45deg, #96CEB4, #FECA57); padding: 15px; border-radius: 10px; text-align: center;">
-  <h4>🤖 AI Researcher</h4>
-  <p>Exploring LLMs & ML</p>
-  <div style="color: #FFD700;">⭐⭐⭐⭐⭐</div>
-</div>
-
-</div>
-
-</details>
-
-</div>
 
 ---
 
@@ -263,85 +209,22 @@ __   __(_)___(_) |_(_)_ __   __ _| |
 
 ## 🎊 Interactive Contact & Social Hub
 
-<div align="center">
-
 ### 🌐 Connect with Me in the Digital Universe!
 
-<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin: 30px 0;">
-
-<!-- Facebook Portal -->
-<a href="https://www.facebook.com/levidang2002/" target="_blank" style="text-decoration: none;">
-  <div style="
-    background: linear-gradient(45deg, #1877F2, #42A5F5);
-    padding: 15px 25px;
-    border-radius: 15px;
-    color: white;
-    text-align: center;
-    transition: all 0.3s ease;
-    transform: perspective(1000px) rotateY(0deg);
-    box-shadow: 0 10px 30px rgba(24,119,242,0.3);
-  " onmouseover="this.style.transform='perspective(1000px) rotateY(15deg) scale(1.05)'" onmouseout="this.style.transform='perspective(1000px) rotateY(0deg) scale(1)'">
-    <div style="font-size: 24px;">📘</div>
-    <div style="font-weight: bold;">Facebook</div>
-    <div style="font-size: 12px;">Social Network</div>
-  </div>
-</a>
-
-<!-- GitHub Portal -->
-<a href="https://github.com/levidang306" target="_blank" style="text-decoration: none;">
-  <div style="
-    background: linear-gradient(45deg, #333, #666);
-    padding: 15px 25px;
-    border-radius: 15px;
-    color: white;
-    text-align: center;
-    transition: all 0.3s ease;
-    transform: perspective(1000px) rotateY(0deg);
-    box-shadow: 0 10px 30px rgba(51,51,51,0.3);
-  " onmouseover="this.style.transform='perspective(1000px) rotateY(15deg) scale(1.05)'" onmouseout="this.style.transform='perspective(1000px) rotateY(0deg) scale(1)'">
-    <div style="font-size: 24px;">🐙</div>
-    <div style="font-weight: bold;">GitHub</div>
-    <div style="font-size: 12px;">Code Repository</div>
-  </div>
-</a>
-
-<!-- LinkedIn Portal -->
-<a href="https://www.linkedin.com/in/levi-dang/" target="_blank" style="text-decoration: none;">
-  <div style="
-    background: linear-gradient(45deg, #0A66C2, #1E88E5);
-    padding: 15px 25px;
-    border-radius: 15px;
-    color: white;
-    text-align: center;
-    transition: all 0.3s ease;
-    transform: perspective(1000px) rotateY(0deg);
-    box-shadow: 0 10px 30px rgba(10,102,194,0.3);
-  " onmouseover="this.style.transform='perspective(1000px) rotateY(15deg) scale(1.05)'" onmouseout="this.style.transform='perspective(1000px) rotateY(0deg) scale(1)'">
-    <div style="font-size: 24px;">💼</div>
-    <div style="font-weight: bold;">LinkedIn</div>
-    <div style="font-size: 12px;">Professional</div>
-  </div>
-</a>
-
-<!-- Email Portal -->
-<a href="mailto:dangquangnhatlinh123@gmail.com" target="_blank" style="text-decoration: none;">
-  <div style="
-    background: linear-gradient(45deg, #EA4335, #FBBC04);
-    padding: 15px 25px;
-    border-radius: 15px;
-    color: white;
-    text-align: center;
-    transition: all 0.3s ease;
-    transform: perspective(1000px) rotateY(0deg);
-    box-shadow: 0 10px 30px rgba(234,67,53,0.3);
-  " onmouseover="this.style.transform='perspective(1000px) rotateY(15deg) scale(1.05)'" onmouseout="this.style.transform='perspective(1000px) rotateY(0deg) scale(1)'">
-    <div style="font-size: 24px;">📧</div>
-    <div style="font-weight: bold;">Email</div>
-    <div style="font-size: 12px;">Direct Contact</div>
-  </div>
-</a>
-
-</div>
+<p align="center">
+  <a href="https://www.facebook.com/levidang2002/">
+    <img src="https://img.shields.io/badge/Facebook-%231877F2.svg?&style=for-the-badge&logo=facebook&logoColor=white" />
+  </a>
+  <a href="https://github.com/levidang306">
+    <img src="https://img.shields.io/badge/GitHub-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+  <a href="https://www.linkedin.com/in/levi-dang/">
+    <img src="https://img.shields.io/badge/LinkedIn-%230A66C2.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+  <a href="mailto:dangquangnhatlinh123@gmail.com">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
+</p>
 
 ### 🎮 Interactive Message Board
 
