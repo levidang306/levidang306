@@ -84,62 +84,11 @@
 
 ## 🎨 Interactive Tech Stack Showcase
 
-<div align="center">
 
-### 🚀 Hover Over Technologies to See Magic! ✨
-
-<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin: 30px 0;">
-
-<!-- Programming Languages with 3D Effects -->
-<div style="text-align: center;">
-  <h4 style="color: #FF6B6B;">💻 Languages</h4>
-  <div>
-    <img src="https://skillicons.dev/icons?i=python" alt="Python" class="techIcon" style="margin: 5px;" data-shadow="rgba(255,107,107,0.5)"/>
-    <img src="https://skillicons.dev/icons?i=javascript" alt="JavaScript" class="techIcon" style="margin: 5px;" data-shadow="rgba(255,223,0,0.5)"/>
-    <img src="https://skillicons.dev/icons?i=typescript" alt="TypeScript" class="techIcon" style="margin: 5px;" data-shadow="rgba(0,122,204,0.5)"/>
-    <img src="https://skillicons.dev/icons?i=java" alt="Java" class="techIcon" style="margin: 5px;" data-shadow="rgba(237,110,68,0.5)"/>
-    <img src="https://skillicons.dev/icons?i=cpp" alt="C++" class="techIcon" style="margin: 5px;" data-shadow="rgba(0,150,255,0.5)"/>
-  </div>
-</div>
-
-<!-- Frameworks with Holographic Effects -->
-<div style="text-align: center;">
-  <h4 style="color: #4ECDC4;">🛠️ Frameworks</h4>
-  <div>
-    <img src="https://skillicons.dev/icons?i=nodejs" alt="Node.js" class="techIcon" style="margin: 5px;" data-shadow="rgba(104,160,99,0.5)"/>
-    <img src="https://skillicons.dev/icons?i=express" alt="Express" class="techIcon" style="margin: 5px;" data-shadow="rgba(255,255,255,0.5)"/>
-    <img src="https://skillicons.dev/icons?i=nestjs" alt="NestJS" class="techIcon" style="margin: 5px;" data-shadow="rgba(234,45,99,0.5)"/>
-  </div>
-</div>
-
-<!-- Databases with Glow Effects -->
-<div style="text-align: center;">
-  <h4 style="color: #FFD700;">🗄️ Databases</h4>
-  <div>
-    <img src="https://skillicons.dev/icons?i=mongodb" alt="MongoDB" class="techIcon" style="margin: 5px;" data-shadow="rgba(77,169,86,0.5)"/>
-    <img src="https://skillicons.dev/icons?i=mysql" alt="MySQL" class="techIcon" style="margin: 5px;" data-shadow="rgba(0,117,143,0.5)"/>
-    <img src="https://skillicons.dev/icons?i=redis" alt="Redis" class="techIcon" style="margin: 5px;" data-shadow="rgba(220,61,50,0.5)"/>
-  </div>
-</div>
-
-<!-- Cloud & DevOps with Lightning Effects -->
-<div style="text-align: center;">
-  <h4 style="color: #96CEB4;">☁️ Cloud & DevOps</h4>
-  <div>
-    <img src="https://skillicons.dev/icons?i=aws" alt="AWS" class="techIcon" style="margin: 5px;" data-shadow="rgba(255,159,0,0.5)"/>
-    <img src="https://skillicons.dev/icons?i=docker" alt="Docker" class="techIcon" style="margin: 5px;" data-shadow="rgba(33,150,243,0.5)"/>
-    <img src="https://skillicons.dev/icons?i=kubernetes" alt="Kubernetes" class="techIcon" style="margin: 5px;" data-shadow="rgba(50,109,230,0.5)"/>
-    <img src="https://skillicons.dev/icons?i=jenkins" alt="Jenkins" class="techIcon" style="margin: 5px;" data-shadow="rgba(209,188,147,0.5)"/>
-  </div>
-</div>
-
-</div>
-
-</div>
-
+| Languages | Frameworks | Databases | Cloud & DevOps |
+|-----------|------------|-----------|----------------|
+| ![Python](https://skillicons.dev/icons?i=python) ![JavaScript](https://skillicons.dev/icons?i=javascript) ![TypeScript](https://skillicons.dev/icons?i=typescript) ![Java](https://skillicons.dev/icons?i=java)  | ![Node.js](https://skillicons.dev/icons?i=nodejs) ![Express](https://skillicons.dev/icons?i=express) ![NestJS](https://skillicons.dev/icons?i=nestjs) | ![MongoDB](https://skillicons.dev/icons?i=mongodb) ![MySQL](https://skillicons.dev/icons?i=mysql) ![Redis](https://skillicons.dev/icons?i=redis) | ![AWS](https://skillicons.dev/icons?i=aws) ![Docker](https://skillicons.dev/icons?i=docker) ![Kubernetes](https://skillicons.dev/icons?i=kubernetes) ![Jenkins](https://skillicons.dev/icons?i=jenkins) |
 ---
-
-## 🎵 Music Visualization & Code Rhythm
 
 <div align="center">
 
@@ -155,15 +104,15 @@
 <div align="center">
 <pre style="font-family: monospace; animation: colorShift 5s infinite;">
     ╔══════════════════════════════════════╗
-    ║              NHAT LINH               ║
-    ║             ┌■■■■■■■■┐               ║
-    ║            ┌■■■■■■■■■■┐              ║
-    ║           ┌■■■ CODING ■┐             ║
-    ║          ┌■■■■ WIZARD ■■┐            ║
-    ║         ┌■■■■■■■■■■■■■■■■┐           ║
-    ║        ┌■■■■■■■■■■■■■■■■■■┐          ║
-    ║       ┌■■■■■■■■■■■■■■■■■■■■┐         ║
-    ║      ┌■■■■■■■■■■■■■■■■■■■■■■┐        ║
+    ║               NHAT LINH              ║
+    ║              ┌■■■■■■■■┐              ║
+    ║             ┌■■■■■■■■■■┐             ║
+    ║            ┌■■ CODING ■■┐            ║
+    ║           ┌■■■ WIZARD ■■■┐           ║
+    ║          ┌■■■■■■■■■■■■■■■■┐          ║
+    ║         ┌■■■■■■■■■■■■■■■■■■┐         ║
+    ║        ┌■■■■■■■■■■■■■■■■■■■■┐        ║
+    ║       ┌■■■■■■■■■■■■■■■■■■■■■■┐       ║
     ║            { LEVEL: ∞ }              ║
     ╚══════════════════════════════════════╝
 </pre>
@@ -174,23 +123,11 @@
 
 
 ### 💻 Live Coding Terminal
-
-<!-- Typing animation (SVG service) -->
-![Typing SVG](https://readme-typing-svg.herokuapp.com?color=00FF00&lines=whoami)
-
+<!-- Animated whoami section -->
+![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&color=00FF00&size=18&lines=nhatlinh@github:~$+whoami;>+Backend+Developer+&+AI+Researcher;>+Specializing+in:+Node.js,+Python,+AWS,+Docker;>+Current+Status:+Building+the+future+with+code+🚀)
+<!-- Animated ls -la projects section -->
+![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&color=00FF00&size=18&lines=nhatlinh@github:~$+ls+-la+projects/;>+microservices-architecture/;>+ai-llm-research/;>+devops-automation/;>+interactive-readme/+←+You+are+here!+😄)
 ```
-nhatlinh@github:~$ whoami
-> Backend Developer & AI Researcher
-> Specializing in: Node.js, Python, AWS, Docker
-> Current Status: Building the future with code 🚀
-
-nhatlinh@github:~$ ls -la projects/
-> microservices-architecture/
-> ai-llm-research/
-> devops-automation/
-> interactive-readme/ ← You are here! 😄
-
-nhatlinh@github:~$ echo "Thanks for visiting!" | figlet
  _____ _                 _          __              
 |_   _| |__   __ _ _ __ | | _____  / _| ___  _ __   
   | | | '_ \ / _` | '_ \| |/ / __| | |_ / _ \| '__|  
