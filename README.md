@@ -127,6 +127,9 @@
 ![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&color=00FF00&size=18&lines=nhatlinh@github:~$+whoami;>+Backend+Developer+&+AI+Researcher;>+Specializing+in:+Node.js,+Python,+AWS,+Docker;>+Current+Status:+Building+the+future+with+code+🚀)
 <!-- Animated ls -la projects section -->
 ![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&color=00FF00&size=18&lines=nhatlinh@github:~$+ls+-la+projects/;>+microservices-architecture/;>+ai-llm-research/;>+devops-automation/;>+interactive-readme/+←+You+are+here!+😄)
+
+<div align="center">
+  
 ```
  _____ _                 _          __              
 |_   _| |__   __ _ _ __ | | _____  / _| ___  _ __   
@@ -140,6 +143,7 @@ __   __(_)___(_) |_(_)_ __   __ _| |
   \_/  |_|___/_|\__|_|_| |_|\__, (_)
                             |___/   
 ```
+</div>
 
 
 ---
