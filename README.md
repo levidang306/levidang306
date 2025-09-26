@@ -145,9 +145,8 @@
 
 ### 🎧 Currently Coding To: 🎵 **Currently Jamming To**: Lofi Hip Hop - Perfect for coding! 🎧
 
-<div style="margin: 20px 0;">
-  <img src="https://spotify-github-profile.vercel.app/api/spotify?background_color=0d1117&border_color=ffffff" alt="Spotify Now Playing" style="border-radius: 15px;"/>
-</div>
+[<img src="https://spotify-playing-git-master.j2teamnnl.vercel.app/api/spotify-playing" alt="J2TeamNNL Spotify Playing" width="350" />](https://open.spotify.com/user/31ghget3jspvgpjwbv5pcwli3smab)
+
 
 ### 🎼 Code Commit Symphony
 
