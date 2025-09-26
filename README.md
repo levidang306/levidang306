@@ -40,23 +40,6 @@
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=00FF88&center=true&vCenter=true&width=435&lines=+Back-end+Developer+%26+AI+Wizard;Building+the+Future+with+Code;" alt="Typing SVG" />
 </p>
 
-<!-- Interactive Visitor Counter with 3D Effect -->
-<div style="margin: 20px 0;">
-  <img src="https://komarev.com/ghpvc/?username=levidang306&style=for-the-badge&color=gradient&label=VISITORS+IN+THE+MATRIX" alt="3D Visitor Counter" class="floatBadge"/>
-</div>
-
-<!-- Interactive Social Links with Hover Effects -->
-<div style="margin: 30px 0;">
-  <a href="http://bunkid.me/" target="_blank">
-    <img src="https://img.shields.io/badge/🌐_ENTER_MY_UNIVERSE-FF6B6B?style=for-the-badge&logo=web&logoColor=white&labelColor=000000" alt="Website" style="margin: 5px; transform: scale(1); transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1) rotateZ(5deg)'" onmouseout="this.style.transform='scale(1) rotateZ(0deg)'"/>
-  </a>
-  <a href="mailto:dangquangnhatlinh123@gmail.com" target="_blank">
-    <img src="https://img.shields.io/badge/📧_CONTACT_MATRIX-4ECDC4?style=for-the-badge&logo=gmail&logoColor=white&labelColor=000000" alt="Email" style="margin: 5px; transform: scale(1); transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1) rotateZ(-5deg)'" onmouseout="this.style.transform='scale(1) rotateZ(0deg)'"/>
-  </a>
-</div>
-
-</div>
-
 ---
 
 ### 🎯 Interactive Quiz - Test Your Tech Knowledge!
@@ -95,35 +78,6 @@
 
 <div align="center" style="margin: 20px 0;">
   <img src="https://readme-jokes.vercel.app/api?theme=radical&hideBorder" alt="Random Dev Joke" />
-</div>
-
----
-
-## 🌌 3D Animated Profile Stats
-
-<div align="center">
-
-<!-- 3D Rotating GitHub Stats -->
-<div style="perspective: 1000px; margin: 30px 0;">
-  <img src="https://github-readme-stats.vercel.app/api?username=levidang306&show_icons=true&theme=synthwave&hide_border=true&bg_color=0D1117&icon_color=F8D847&text_color=F8D847&title_color=FF6B6B" 
-       alt="3D GitHub Stats" 
-       class="cardFlip"/>
-</div>
-
-<!-- Holographic Languages Chart -->
-<div style="margin: 30px 0;">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=levidang306&layout=compact&theme=synthwave&hide_border=true&bg_color=0D1117&text_color=F8D847&title_color=4ECDC4" 
-       alt="Holographic Languages" 
-       class="glow"/>
-</div>
-
-<!-- Interactive Streak Counter -->
-<div style="margin: 30px 0;">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=levidang306&theme=neon-dark&hide_border=true&background=0D1117&stroke=FF6B6B&ring=4ECDC4&fire=FFD700&currStreakLabel=F8D847" 
-       alt="Interactive Streak" 
-       class="pulse"/>
-</div>
-
 </div>
 
 ---
