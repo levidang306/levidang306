@@ -9,11 +9,15 @@
   <img src="https://raw.githubusercontent.com/rodrigograca31/rodrigograca31/master/matrix.svg" width="100%" height="200px" alt="Matrix Animation"/>
 </div>
 
-<!-- 3D Rotating Name -->
+<!-- WakaTime Stats (Auto-updated) -->
+<div align="center" style="margin: 20px 0;">
+  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=levidang306&layout=compact&hide_title=true&hide_progress=true&theme=radical" alt="WakaTime Stats" width="350" style="max-width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);"/>
+</div>
+<!-- 3D Rotating Name - Mobile Responsive -->
 <div style="perspective: 1000px;">
   <h1 style="
     transform-style: preserve-3d;
-    font-size: 3em;
+    font-size: clamp(1.5em, 5vw, 3em);
     text-shadow: 0 0 20px rgba(255,255,255,0.5);
     display: inline-block;
     animation: rotate3d 8s infinite linear;
@@ -26,13 +30,13 @@
       background-size: 400% 400%;
       animation: gradient 3s ease infinite;
     ">
-      ⚡ NHAT LINH ⚡
+      ⚡ Levi Dang ⚡
     </span>
   </h1>
 </div>
 
-<!-- Holographic Effect Badge -->
-<img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=25&duration=3000&pause=1000&color=00FF88&background=FF000000&center=true&vCenter=true&multiline=true&width=800&height=100&lines=🚀+Back-end+Developer+%26+AI+Wizard;🌌+Building+the+Future+with+Code;🎮+Interactive+Profile+Experience!" alt="Holographic Typing"/>
+<!-- Holographic Effect Badge - Mobile Responsive -->
+<img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=25&duration=3000&pause=1000&color=00FF88&background=FF000000&center=true&vCenter=true&multiline=true&width=800&height=100&lines=🚀+Back-end+Developer+%26+AI+Wizard;🌌+Building+the+Future+with+Code;🎮+Interactive+Profile+Experience!" alt="Holographic Typing" style="max-width: 100%; height: auto;"/>
 
 <!-- Interactive Visitor Counter with 3D Effect -->
 <div style="margin: 20px 0;">
@@ -268,10 +272,16 @@
 
 ### ⚡ Real-time Development Stats
 
+<div align="center">
+
+<!--START_SECTION:waka-->
 <div style="text-align: center; margin: 20px 0; padding: 20px; background: rgba(255,107,107,0.1); border-radius: 10px; border: 2px solid rgba(255,107,107,0.3);">
-  <h3 style="color: #FF6B6B;">📊 WakaTime Stats Temporarily Offline</h3>
-  <p style="color: #4ECDC4;">The coding analytics are recharging! ⚡</p>
-  <p style="font-size: 12px; color: #888;">Will be back online soon with fresh insights!</p>
+  <h3 style="color: #FF6B6B;">📊 WakaTime Stats Loading...</h3>
+  <p style="color: #4ECDC4;">Fetching the latest coding analytics! ⚡</p>
+  <p style="font-size: 12px; color: #888;">Updated automatically every 30 minutes</p>
+</div>
+<!--END_SECTION:waka-->
+
 </div>
 
 ### 🔥 Recent GitHub Activity
@@ -393,36 +403,6 @@
     </div>
   </div>
 </div>
-</div>
-
-### 🎲 Random Tech Quote
-
-<div align="center" style="margin: 30px 0; padding: 20px; background: linear-gradient(45deg, rgba(255,107,107,0.1), rgba(78,205,196,0.1)); border-radius: 15px; border: 2px solid rgba(255,107,107,0.3);">
-  
-<div style="text-align: center; padding: 25px; background: linear-gradient(135deg, rgba(255,107,107,0.1), rgba(78,205,196,0.1), rgba(255,215,0,0.1)); border-radius: 20px; border: 2px solid rgba(78,205,196,0.3); margin: 20px 0; position: relative; overflow: hidden;">
-  
-  <div style="position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(78,205,196,0.1) 0%, transparent 50%); animation: rotate 20s linear infinite; z-index: 1;"></div>
-  
-  <div style="position: relative; z-index: 2;">
-    <div style="font-size: 28px; margin-bottom: 15px; animation: floatBadge 3s ease-in-out infinite;">💭</div>
-    
-    <blockquote style="font-size: 20px; font-style: italic; color: #4ECDC4; margin: 20px 0; line-height: 1.6; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">
-      "First, solve the problem. Then, write the code."
-    </blockquote>
-    
-    <div style="font-size: 16px; color: #FFD700; font-weight: bold; margin-top: 15px;">
-      — John Johnson
-    </div>
-    
-    <div style="margin-top: 20px;">
-      <span style="background: linear-gradient(45deg, #FF6B6B, #4ECDC4); padding: 5px 15px; border-radius: 20px; font-size: 12px; color: white; font-weight: bold;">
-        🎯 Strategy
-      </span>
-    </div>
-  </div>
-  
-</div>
-
 </div>
 
 ---
