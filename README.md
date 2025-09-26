@@ -9,10 +9,7 @@
   <img src="https://raw.githubusercontent.com/rodrigograca31/rodrigograca31/master/matrix.svg" width="100%" height="200px" alt="Matrix Animation"/>
 </div>
 
-<!-- WakaTime Stats (Auto-updated) -->
-<div align="center" style="margin: 20px 0;">
-  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=levidang306&layout=compact&hide_title=true&hide_progress=true&theme=radical" alt="WakaTime Stats" width="350" style="max-width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);"/>
-</div>
+
 <!-- 3D Rotating Name - Mobile Responsive -->
 <div style="perspective: 1000px;">
   <h1 style="
@@ -36,7 +33,12 @@
 </div>
 
 <!-- Holographic Effect Badge - Mobile Responsive -->
-<img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=25&duration=3000&pause=1000&color=00FF88&background=FF000000&center=true&vCenter=true&multiline=true&width=800&height=100&lines=🚀+Back-end+Developer+%26+AI+Wizard;🌌+Building+the+Future+with+Code;🎮+Interactive+Profile+Experience!" alt="Holographic Typing" style="max-width: 100%; height: auto;"/>
+<!-- <img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=25&duration=3000&pause=1000&color=00FF88&background=FF000000&center=true&vCenter=true&multiline=true&width=800&height=100&lines=🚀+Back-end+Developer+%26+AI+Wizard;🌌+Building+the+Future+with+Code;🎮+Interactive+Profile+Experience!" alt="Holographic Typing" style="max-width: 100%; height: auto;"/> -->
+
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=00FF88&center=true&vCenter=true&width=435&lines=+Back-end+Developer+%26+AI+Wizard;Building+the+Future+with+Code;" alt="Typing SVG" />
+</p>
 
 <!-- Interactive Visitor Counter with 3D Effect -->
 <div style="margin: 20px 0;">
@@ -56,24 +58,6 @@
 </div>
 
 ---
-
-## 🎮 Interactive Game Zone - Play Right Here! 🕹️
-
-### 🐍 Snake Game (Click to Play!)
-
-<div align="center">
-  <a href="https://levidang306.github.io/snake-game" target="_blank">
-    <img src="https://img.shields.io/badge/🐍_PLAY_SNAKE_GAME-00FF00?style=for-the-badge&logo=python&logoColor=white&labelColor=000000" alt="Snake Game"/>
-  </a>
-  
-  <!-- Embedded Snake Game Placeholder -->
-  <div style="margin: 20px 0; padding: 20px; border: 2px solid #00FF00; border-radius: 10px; background: #000;">
-    <p style="color: #00FF00; font-family: monospace; font-size: 18px;">
-      🎮 Click above to play Snake Game!<br>
-      🏆 Current High Score: <span id="snake-score">Loading...</span>
-    </p>
-  </div>
-</div>
 
 ### 🎯 Interactive Quiz - Test Your Tech Knowledge!
 
@@ -269,273 +253,45 @@
 ---
 
 ## 🌈 Dynamic Content Sections
-
-### ⚡ Real-time Development Stats
-
 <div align="center">
-
-<!--START_SECTION:waka-->
-<div style="text-align: center; margin: 20px 0; padding: 20px; background: rgba(255,107,107,0.1); border-radius: 10px; border: 2px solid rgba(255,107,107,0.3);">
-  <h3 style="color: #FF6B6B;">📊 WakaTime Stats Loading...</h3>
-  <p style="color: #4ECDC4;">Fetching the latest coding analytics! ⚡</p>
-  <p style="font-size: 12px; color: #888;">Updated automatically every 30 minutes</p>
-</div>
-<!--END_SECTION:waka-->
-
-</div>
-
-### 🔥 Recent GitHub Activity
-
-<div style="text-align: center; margin: 20px 0;">
-  <h3 style="color: #FF6B6B; margin-bottom: 10px;">🔥 Live Activity Feed</h3>
-  <p style="color: #4ECDC4; font-size: 14px;">Real-time updates from the coding universe! ✨</p>
-</div>
-<div style="max-width: 600px; margin: 0 auto;">
-
-<div style="display: flex; align-items: center; margin: 8px 0; padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px; border-left: 3px solid #4ECDC4;">
-  <span style="font-size: 20px; margin-right: 10px;">🔄</span>
-  <div style="flex: 1;">
-    <div style="font-weight: bold; color: #4ECDC4;">PullRequestReview activity in **tranthithuytien2307/SGroup_Advanced_BE**</div>
-    <div style="font-size: 12px; color: #888; margin-top: 5px;">
-      <span style="margin-right: 10px;">📅 Sep 25, 02:53 AM</span>
-      <span style="background: linear-gradient(45deg, #666, #999); padding: 2px 8px; border-radius: 10px; font-size: 10px;">ACTIVITY</span>
-    </div>
-    <div style="width: 100%; background: rgba(255,255,255,0.1); height: 2px; border-radius: 1px; margin-top: 5px;">
-      <div style="width: 78%; background: linear-gradient(45deg, #FF6B6B, #4ECDC4); height: 100%; border-radius: 1px; transition: width 0.3s ease;"></div>
-    </div>
-  </div>
-</div>
-
-<div style="display: flex; align-items: center; margin: 8px 0; padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px; border-left: 3px solid #4ECDC4;">
-  <span style="font-size: 20px; margin-right: 10px;">🚀</span>
-  <div style="flex: 1;">
-    <div style="font-weight: bold; color: #4ECDC4;">Launched 2 commits to orbit in **levidang306/levidang306**</div>
-    <div style="font-size: 12px; color: #888; margin-top: 5px;">
-      <span style="margin-right: 10px;">📅 Sep 25, 02:33 AM</span>
-      <span style="background: linear-gradient(45deg, #FF6B6B, #4ECDC4); padding: 2px 8px; border-radius: 10px; font-size: 10px;">FRESH CODE</span>
-    </div>
-    <div style="width: 100%; background: rgba(255,255,255,0.1); height: 2px; border-radius: 1px; margin-top: 5px;">
-      <div style="width: 78%; background: linear-gradient(45deg, #FF6B6B, #4ECDC4); height: 100%; border-radius: 1px; transition: width 0.3s ease;"></div>
-    </div>
-  </div>
-</div>
-
-<div style="display: flex; align-items: center; margin: 8px 0; padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px; border-left: 3px solid #4ECDC4;">
-  <span style="font-size: 20px; margin-right: 10px;">✅</span>
-  <div style="flex: 1;">
-    <div style="font-weight: bold; color: #4ECDC4;">Merged PR #1 in **levidang306/levidang306**</div>
-    <div style="font-size: 12px; color: #888; margin-top: 5px;">
-      <span style="margin-right: 10px;">📅 Sep 25, 02:33 AM</span>
-      <span style="background: linear-gradient(45deg, #4ECDC4, #96CEB4); padding: 2px 8px; border-radius: 10px; font-size: 10px;">COLLABORATION</span>
-    </div>
-    <div style="width: 100%; background: rgba(255,255,255,0.1); height: 2px; border-radius: 1px; margin-top: 5px;">
-      <div style="width: 78%; background: linear-gradient(45deg, #FF6B6B, #4ECDC4); height: 100%; border-radius: 1px; transition: width 0.3s ease;"></div>
-    </div>
-  </div>
-</div>
-
-<div style="display: flex; align-items: center; margin: 8px 0; padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px; border-left: 3px solid #4ECDC4;">
-  <span style="font-size: 20px; margin-right: 10px;">🔄</span>
-  <div style="flex: 1;">
-    <div style="font-weight: bold; color: #4ECDC4;">PullRequestReview activity in **levidang306/levidang306**</div>
-    <div style="font-size: 12px; color: #888; margin-top: 5px;">
-      <span style="margin-right: 10px;">📅 Sep 25, 02:33 AM</span>
-      <span style="background: linear-gradient(45deg, #666, #999); padding: 2px 8px; border-radius: 10px; font-size: 10px;">ACTIVITY</span>
-    </div>
-    <div style="width: 100%; background: rgba(255,255,255,0.1); height: 2px; border-radius: 1px; margin-top: 5px;">
-      <div style="width: 78%; background: linear-gradient(45deg, #FF6B6B, #4ECDC4); height: 100%; border-radius: 1px; transition: width 0.3s ease;"></div>
-    </div>
-  </div>
-</div>
-
-<div style="display: flex; align-items: center; margin: 8px 0; padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px; border-left: 3px solid #4ECDC4;">
-  <span style="font-size: 20px; margin-right: 10px;">✔️</span>
-  <div style="flex: 1;">
-    <div style="font-weight: bold; color: #4ECDC4;">Resolved issue #2 in **bunkid/git-testupdate**</div>
-    <div style="font-size: 12px; color: #888; margin-top: 5px;">
-      <span style="margin-right: 10px;">📅 Sep 25, 02:29 AM</span>
-      <span style="background: linear-gradient(45deg, #FFD700, #FECA57); padding: 2px 8px; border-radius: 10px; font-size: 10px;">PROBLEM SOLVER</span>
-    </div>
-    <div style="width: 100%; background: rgba(255,255,255,0.1); height: 2px; border-radius: 1px; margin-top: 5px;">
-      <div style="width: 78%; background: linear-gradient(45deg, #FF6B6B, #4ECDC4); height: 100%; border-radius: 1px; transition: width 0.3s ease;"></div>
-    </div>
-  </div>
-</div>
-
-<div style="display: flex; align-items: center; margin: 8px 0; padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px; border-left: 3px solid #4ECDC4;">
-  <span style="font-size: 20px; margin-right: 10px;">🐛</span>
-  <div style="flex: 1;">
-    <div style="font-weight: bold; color: #4ECDC4;">Discovered issue #3 in **bunkid/test-repo-template**</div>
-    <div style="font-size: 12px; color: #888; margin-top: 5px;">
-      <span style="margin-right: 10px;">📅 Sep 25, 02:28 AM</span>
-      <span style="background: linear-gradient(45deg, #FFD700, #FECA57); padding: 2px 8px; border-radius: 10px; font-size: 10px;">PROBLEM SOLVER</span>
-    </div>
-    <div style="width: 100%; background: rgba(255,255,255,0.1); height: 2px; border-radius: 1px; margin-top: 5px;">
-      <div style="width: 78%; background: linear-gradient(45deg, #FF6B6B, #4ECDC4); height: 100%; border-radius: 1px; transition: width 0.3s ease;"></div>
-    </div>
-  </div>
-</div>
-
-<div style="display: flex; align-items: center; margin: 8px 0; padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px; border-left: 3px solid #4ECDC4;">
-  <span style="font-size: 20px; margin-right: 10px;">🐛</span>
-  <div style="flex: 1;">
-    <div style="font-weight: bold; color: #4ECDC4;">Discovered issue #1 in **bunkid/test-repo-template**</div>
-    <div style="font-size: 12px; color: #888; margin-top: 5px;">
-      <span style="margin-right: 10px;">📅 Sep 25, 02:23 AM</span>
-      <span style="background: linear-gradient(45deg, #FFD700, #FECA57); padding: 2px 8px; border-radius: 10px; font-size: 10px;">PROBLEM SOLVER</span>
-    </div>
-    <div style="width: 100%; background: rgba(255,255,255,0.1); height: 2px; border-radius: 1px; margin-top: 5px;">
-      <div style="width: 76%; background: linear-gradient(45deg, #FF6B6B, #4ECDC4); height: 100%; border-radius: 1px; transition: width 0.3s ease;"></div>
-    </div>
-  </div>
-</div>
-
-<div style="display: flex; align-items: center; margin: 8px 0; padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px; border-left: 3px solid #4ECDC4;">
-  <span style="font-size: 20px; margin-right: 10px;">🚀</span>
-  <div style="flex: 1;">
-    <div style="font-weight: bold; color: #4ECDC4;">Launched 1 commit to orbit in **levidang306/training-be**</div>
-    <div style="font-size: 12px; color: #888; margin-top: 5px;">
-      <span style="margin-right: 10px;">📅 Sep 25, 02:16 AM</span>
-      <span style="background: linear-gradient(45deg, #FF6B6B, #4ECDC4); padding: 2px 8px; border-radius: 10px; font-size: 10px;">FRESH CODE</span>
-    </div>
-    <div style="width: 100%; background: rgba(255,255,255,0.1); height: 2px; border-radius: 1px; margin-top: 5px;">
-      <div style="width: 76%; background: linear-gradient(45deg, #FF6B6B, #4ECDC4); height: 100%; border-radius: 1px; transition: width 0.3s ease;"></div>
-    </div>
-  </div>
-</div>
-</div>
-
----
-
-## 🎮 Interactive Mini-Games Collection
-
-<div align="center">
-
-### 🕹️ Choose Your Adventure!
-
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin: 30px 0;">
-
-<!-- Tic Tac Toe Game -->
-<div style="border: 2px solid #FF6B6B; border-radius: 15px; padding: 20px; background: rgba(255,107,107,0.1);">
-  <h4>⭕ Tic Tac Toe</h4>
-  <p>Classic game in your README!</p>
-  <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 5px; max-width: 150px; margin: 0 auto;">
-    <div style="width: 40px; height: 40px; border: 1px solid #fff; display: flex; align-items: center; justify-content: center; cursor: pointer;">❌</div>
-    <div style="width: 40px; height: 40px; border: 1px solid #fff; display: flex; align-items: center; justify-content: center; cursor: pointer;">⭕</div>
-    <div style="width: 40px; height: 40px; border: 1px solid #fff; display: flex; align-items: center; justify-content: center; cursor: pointer;"></div>
-    <div style="width: 40px; height: 40px; border: 1px solid #fff; display: flex; align-items: center; justify-content: center; cursor: pointer;">❌</div>
-    <div style="width: 40px; height: 40px; border: 1px solid #fff; display: flex; align-items: center; justify-content: center; cursor: pointer;"></div>
-    <div style="width: 40px; height: 40px; border: 1px solid #fff; display: flex; align-items: center; justify-content: center; cursor: pointer;">⭕</div>
-    <div style="width: 40px; height: 40px; border: 1px solid #fff; display: flex; align-items: center; justify-content: center; cursor: pointer;"></div>
-    <div style="width: 40px; height: 40px; border: 1px solid #fff; display: flex; align-items: center; justify-content: center; cursor: pointer;">❌</div>
-    <div style="width: 40px; height: 40px; border: 1px solid #fff; display: flex; align-items: center; justify-content: center; cursor: pointer;"></div>
-  </div>
-</div>
-
-<!-- Code Puzzle -->
-<div style="border: 2px solid #4ECDC4; border-radius: 15px; padding: 20px; background: rgba(78,205,196,0.1);">
-  <h4>🧩 Code Puzzle</h4>
-  <p>Solve the coding challenge:</p>
-  <div style="font-family: monospace; background: #000; padding: 10px; border-radius: 5px; color: #4ECDC4;">
-    function mystery(x) {<br>
-    &nbsp;&nbsp;return x * 2 + ?<br>
-    }<br>
-    <span style="color: #FFD700;">// What makes mystery(5) = 13?</span>
-  </div>
-  <p style="font-size: 12px; margin-top: 10px;">Answer: 3 ✅</p>
-</div>
-
-<!-- Memory Game -->
-<div style="border: 2px solid #FFD700; border-radius: 15px; padding: 20px; background: rgba(255,215,0,0.1);">
-  <h4>🧠 Memory Game</h4>
-  <p>Remember the sequence:</p>
-  <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; max-width: 120px; margin: 0 auto;">
-    <div style="width: 50px; height: 50px; background: #FF6B6B; border-radius: 10px; cursor: pointer; animation: flash 1s ease-in-out;"></div>
-    <div style="width: 50px; height: 50px; background: #4ECDC4; border-radius: 10px; cursor: pointer;"></div>
-    <div style="width: 50px; height: 50px; background: #FFD700; border-radius: 10px; cursor: pointer;"></div>
-    <div style="width: 50px; height: 50px; background: #96CEB4; border-radius: 10px; cursor: pointer;"></div>
-  </div>
-</div>
-
-</div>
-
-</div>
-
----
-
-## 🎨 Interactive Art Gallery
-
-<div align="center">
-
-### 🖼️ ASCII Art Animation
-
 <pre style="font-family: monospace; animation: colorShift 5s infinite;">
     ╔══════════════════════════════════════╗
     ║              NHAT LINH               ║
-    ║            ◢■■■■■■■■◤                 ║
-    ║           ◢■■■■■■■■■■◤                ║
-    ║          ◢■■■ CODING ■■■◤             ║
-    ║         ◢■■■■ WIZARD ■■■■◤            ║
-    ║        ◢■■■■■■■■■■■■■■■■◤             ║
-    ║       ◢■■■■■■■■■■■■■■■■■■◤            ║
-    ║      ◢■■■■■■■■■■■■■■■■■■■■◤           ║
-    ║     ◢■■■■■■■■■■■■■■■■■■■■■■◤          ║
+    ║             ┌■■■■■■■■┐               ║
+    ║            ┌■■■■■■■■■■┐              ║
+    ║           ┌■■■ CODING ■┐             ║
+    ║          ┌■■■■ WIZARD ■■┐            ║
+    ║         ┌■■■■■■■■■■■■■■■■┐           ║
+    ║        ┌■■■■■■■■■■■■■■■■■■┐          ║
+    ║       ┌■■■■■■■■■■■■■■■■■■■■┐         ║
+    ║      ┌■■■■■■■■■■■■■■■■■■■■■■┐        ║
     ║            { LEVEL: ∞ }              ║
     ╚══════════════════════════════════════╝
 </pre>
-
-### 🌟 Interactive Constellation Map
-
-<div style="position: relative; width: 100%; height: 200px; background: linear-gradient(180deg, #000011 0%, #000033 100%); border-radius: 15px; overflow: hidden; margin: 20px 0;">
-  <!-- Stars -->
-  <div class="star" style="top: 20%; left: 10%; width: 4px; height: 4px; background: #FFD700; --delay: 0s;"></div>
-  <div class="star" style="top: 30%; left: 25%; width: 3px; height: 3px; background: #4ECDC4; --delay: 0.5s;"></div>
-  <div class="star" style="top: 15%; left: 40%; width: 5px; height: 5px; background: #FF6B6B; --delay: 1s;"></div>
-  <div class="star" style="top: 40%; left: 60%; width: 3px; height: 3px; background: #96CEB4; --delay: 1.5s;"></div>
-  <div class="star" style="top: 25%; left: 80%; width: 4px; height: 4px; background: #FFD700; --delay: 2s;"></div>
-  
-  <!-- Constellation Lines -->
-  <svg style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-    <line x1="10%" y1="20%" x2="25%" y2="30%" stroke="#4ECDC4" stroke-width="1" opacity="0.6"/>
-    <line x1="25%" y1="30%" x2="40%" y2="15%" stroke="#4ECDC4" stroke-width="1" opacity="0.6"/>
-    <line x1="40%" y1="15%" x2="60%" y2="40%" stroke="#4ECDC4" stroke-width="1" opacity="0.6"/>
-    <line x1="60%" y1="40%" x2="80%" y2="25%" stroke="#4ECDC4" stroke-width="1" opacity="0.6"/>
-  </svg>
-  
-  <div style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); color: #4ECDC4; font-family: monospace; font-size: 12px;">
-    ✨ The Coding Constellation ✨
-  </div>
-</div>
-
 </div>
 
 ---
 
-## 🎪 Interactive Showcase Terminal
 
-<div align="center">
 
 ### 💻 Live Coding Terminal
 
-<div style="background: #000; border-radius: 10px; padding: 20px; margin: 20px 0; font-family: 'Courier New', monospace; color: #00FF00; text-align: left; max-width: 600px; margin: 20px auto;">
-<div style="color: #FFD700;">nhatlinh@github:~$ </div>
-<div class="typing">whoami</div>
-<div style="color: #4ECDC4;">
-> Backend Developer & AI Researcher<br>
-> Specializing in: Node.js, Python, AWS, Docker<br>
+<!-- Typing animation (SVG service) -->
+![Typing SVG](https://readme-typing-svg.herokuapp.com?color=00FF00&lines=whoami)
+
+```
+nhatlinh@github:~$ whoami
+> Backend Developer & AI Researcher
+> Specializing in: Node.js, Python, AWS, Docker
 > Current Status: Building the future with code 🚀
-</div>
-<div style="color: #FFD700; margin-top: 10px;">nhatlinh@github:~$ </div>
-<div class="typing" style="animation-delay: 2s;">ls -la projects/</div>
-<div style="color: #96CEB4;">
-> microservices-architecture/<br>
-> ai-llm-research/<br>
-> devops-automation/<br>
+
+nhatlinh@github:~$ ls -la projects/
+> microservices-architecture/
+> ai-llm-research/
+> devops-automation/
 > interactive-readme/ ← You are here! 😄
-</div>
-<div style="color: #FFD700; margin-top: 10px;">nhatlinh@github:~$ </div>
-<div class="typing" style="animation-delay: 4s;">echo "Thanks for visiting!" | figlet</div>
-<div style="color: #FF6B6B; font-size: 8px; line-height: 1;">
+
+nhatlinh@github:~$ echo "Thanks for visiting!" | figlet
  _____ _                 _          __              
 |_   _| |__   __ _ _ __ | | _____  / _| ___  _ __   
   | | | '_ \ / _` | '_ \| |/ / __| | |_ / _ \| '__|  
@@ -547,10 +303,8 @@ __   __(_)___(_) |_(_)_ __   __ _| |
  \ V / | \__ \ | |_| | | | | (_| |_|
   \_/  |_|___/_|\__|_|_| |_|\__, (_)
                             |___/   
-</div>
-</div>
+```
 
-</div>
 
 ---
 
@@ -688,24 +442,8 @@ __   __(_)___(_) |_(_)_ __   __ _| |
   </p>
   
   <div style="margin: 20px 0;">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=3000&pause=1000&color=4ECDC4&center=true&vCenter=true&width=500&lines=💫+Let's+build+something+amazing+together!+💫;🎯+Open+for+collaborations+and+opportunities!;🌟+Always+learning%2C+always+growing!+🌟" alt="Closing Message"/>
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=3000&pause=1000&color=4ECDC4&center=true&vCenter=true&width=500&lines=Let's+build+something+amazing+together!+Open+for+collaborations+and+opportunities!;+Always+learning%2C+always+growing!" alt="Closing Message"/>
   </div>
-</div>
-
-<div style="margin: 30px 0; font-family: monospace; color: #666; font-size: 14px;">
-  <p>🤖 This interactive README updates every 30 minutes with fresh content!</p>
-  <p>⚡ Last Updated: <strong>September 25, 2025 at 14:26 UTC</strong></p>
-  <p>🎮 Interactive elements work best on GitHub web interface</p>
-</div>
-
-<div style="margin: 20px 0;">
-  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" alt="Animated Divider" width="100%"/>
-</div>
-
-<p style="font-size: 20px; background: linear-gradient(45deg, #FF6B6B, #4ECDC4, #FFD700, #96CEB4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; animation: gradient 3s ease infinite;">
-  💝 <em>"In a world of code, be the one who brings magic to life!"</em> 💝
-</p>
-
 </div>
 
 <!-- Hidden Easter Egg -->
