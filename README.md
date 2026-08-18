@@ -90,15 +90,6 @@
 | ![Python](https://skillicons.dev/icons?i=python) ![JavaScript](https://skillicons.dev/icons?i=javascript) ![TypeScript](https://skillicons.dev/icons?i=typescript) ![Java](https://skillicons.dev/icons?i=java)  | ![Node.js](https://skillicons.dev/icons?i=nodejs) ![Express](https://skillicons.dev/icons?i=express) ![NestJS](https://skillicons.dev/icons?i=nestjs) | ![MongoDB](https://skillicons.dev/icons?i=mongodb) ![MySQL](https://skillicons.dev/icons?i=mysql) ![Redis](https://skillicons.dev/icons?i=redis) | ![AWS](https://skillicons.dev/icons?i=aws) ![Docker](https://skillicons.dev/icons?i=docker) ![Kubernetes](https://skillicons.dev/icons?i=kubernetes) ![Jenkins](https://skillicons.dev/icons?i=jenkins) |
 ---
 
-<div align="center">
-
-### 🎧 Currently Coding To: 🎵 **Currently Jamming To**: Lofi Hip Hop - Perfect for coding! 🎧
-
-[<img src="https://spotify-playing-git-master.j2teamnnl.vercel.app/api/spotify-playing" alt="J2TeamNNL Spotify Playing" width="350" />](https://open.spotify.com/user/31ghget3jspvgpjwbv5pcwli3smab)
-
-
-
----
 
 ## 🌈 Dynamic Content Sections
 <div align="center">
