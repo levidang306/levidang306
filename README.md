@@ -1,86 +1,55 @@
-<!-- Levi Dang's GitHub Profile README -->
+<!-- levidang306 · profile README -->
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/rodrigograca31/rodrigograca31/master/matrix.svg" width="100%" height="200px" alt="Matrix Animation"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:060b16,60:0d1524,100:4be3f2&height=170&section=header&text=Levi%20Dang&fontSize=54&fontColor=ffffff&fontAlignY=36&desc=AI%20%2F%20Backend%20Engineer%20%C2%B7%20Da%20Nang%2C%20Vietnam&descSize=16&descAlignY=58&animation=fadeIn" width="100%" alt="Levi Dang — AI / Backend Engineer" />
 
-# Levi Dang
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=19&pause=1400&color=4BE3F2&center=true&vCenter=true&width=620&lines=I+build+AI+systems+that+survive+production.;Agentic+RAG+%C2%B7+multi-agent+orchestration+%C2%B7+MLOps;TypeScript+%C2%B7+Python+%C2%B7+AWS+%C2%B7+GCP" alt="I build AI systems that survive production" />
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=00FF88&center=true&vCenter=true&width=435&lines=Back-end+Developer+%26+AI+Wizard;Building+the+Future+with+Code;" alt="Typing SVG" />
+<p>
+<a href="https://levi.sgroupvn.org/"><img src="https://img.shields.io/badge/Portfolio-4BE3F2?style=flat-square&logo=googlechrome&logoColor=060b16" alt="Portfolio" /></a>
+<a href="https://www.linkedin.com/in/levi-dang/"><img src="https://img.shields.io/badge/LinkedIn-0d1524?style=flat-square&logo=linkedin&logoColor=4BE3F2" alt="LinkedIn" /></a>
+<a href="mailto:nhatlinh.dut.3@gmail.com"><img src="https://img.shields.io/badge/Email-0d1524?style=flat-square&logo=gmail&logoColor=4BE3F2" alt="Email" /></a>
+<img src="https://img.shields.io/badge/Open%20to-AI%20engineering%20roles-4BE3F2?style=flat-square&labelColor=0d1524" alt="Open to AI engineering roles" />
 </p>
 
-<p align="center">
-  <a href="https://levi.sgroupvn.org/">
-    <img src="https://img.shields.io/badge/Portfolio-levi.sgroupvn.org-6C5CE7?style=for-the-badge&logo=googlechrome&logoColor=white" />
-  </a>
-  <img src="https://komarev.com/ghpvc/?username=levidang306&style=for-the-badge&color=00FF88&label=Profile+Views" />
-</p>
+</div>
 
 ---
 
-## Tech Stack
+AI R&D engineer at **Enclave** (Da Nang) and MSc candidate at Da Nang University of Science & Technology.
+I take LLM features from prototype to production — retrieval that stays grounded, agents that call tools reliably, and the AWS/GCP infrastructure holding it up.
 
-| Languages | Frameworks | Databases | Cloud & DevOps |
-|-----------|------------|-----------|----------------|
-| ![Python](https://skillicons.dev/icons?i=python) ![JavaScript](https://skillicons.dev/icons?i=javascript) ![TypeScript](https://skillicons.dev/icons?i=typescript) ![Java](https://skillicons.dev/icons?i=java) | ![Node.js](https://skillicons.dev/icons?i=nodejs) ![Express](https://skillicons.dev/icons?i=express) ![NestJS](https://skillicons.dev/icons?i=nestjs) | ![MongoDB](https://skillicons.dev/icons?i=mongodb) ![MySQL](https://skillicons.dev/icons?i=mysql) ![Redis](https://skillicons.dev/icons?i=redis) | ![AWS](https://skillicons.dev/icons?i=aws) ![Docker](https://skillicons.dev/icons?i=docker) ![Kubernetes](https://skillicons.dev/icons?i=kubernetes) ![Jenkins](https://skillicons.dev/icons?i=jenkins) |
+**Currently**
 
----
-
-## What I'm Working On
-
-![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&color=00FF00&size=18&center=true&vCenter=true&width=600&lines=Backend+Developer+%26+AI+Researcher;Specializing+in%3A+Node.js%2C+Python%2C+AWS%2C+Docker;Currently+building%3A+microservices+%26+LLM-powered+tools)
+- Multi-agent orchestration over the A2A protocol — typed tool contracts, `plan → act → observe → iterate`
+- Cutting LLM token cost with response caching, prompt rewrites and per-task model routing
+- Backend scalability across enterprise products in NestJS and FastAPI
 
 ---
 
-## GitHub Stats
+### Selected work
 
-<p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=levidang306&show_icons=true&theme=radical&hide_border=true&count_private=true" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=levidang306&layout=compact&theme=radical&hide_border=true" />
-</p>
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=levidang306&theme=radical&hide_border=true" alt="GitHub Streak" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=levidang306&theme=react-dark&hide_border=true" alt="Activity Graph" />
-</p>
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=levidang306&theme=radical&no-frame=true&row=1&column=7" alt="Trophies" />
-</p>
+| Project | What it does | Stack |
+| --- | --- | --- |
+| **Real-estate AI assistant** | One orchestration agent routing to focused sub-agents instead of a single overloaded prompt — lower token spend, in-domain tuned model. | `ADK-python` `Gemini` `Vertex RAG` `Next.js` |
+| **Agentic RAG job platform** | Every reply grounded in retrieved evidence, not free generation. Vector search behind a NestJS gateway. | `NestJS` `FastAPI` `LangChain` `Redis` `Docker` |
+| **Agent-based project planner** | Turns raw requirements into structured project plans via coordinated sub-agents. | `FastAPI` `A2A` `Structured outputs` |
+| **High-availability AWS deploy** | Zero-downtime rolling deploys, multi-AZ ECS, least-privilege IAM. | `ECS/ECR` `ALB` `S3` `IAM` |
 
 ---
 
-## Contribution Snake
+### Stack
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/levidang306/levidang306/output/snake.svg" alt="Contribution Snake animation" />
-</p>
-<!-- Auto-generated on a schedule via .github/workflows/snake.yml — no blog/API key needed -->
+**AI** `OpenAI` `Gemini` `Qwen` `vLLM` `llama.cpp`
+**Retrieval** `LangChain` `Qdrant` `pgvector` `Vertex RAG`
+**Backend** `TypeScript` `Python` `NestJS` `FastAPI` `Express` `Redis` `PostgreSQL`
+**Cloud** `AWS ECS/ECR` `GCP` `Docker` `GitHub Actions`
 
 ---
 
-## Connect with Me
+<div align="center">
 
-<p align="center">
-  <a href="https://levi.sgroupvn.org/">
-    <img src="https://img.shields.io/badge/Portfolio-6C5CE7?style=for-the-badge&logo=googlechrome&logoColor=white" />
-  </a>
-  <a href="https://www.facebook.com/levidang2002/">
-    <img src="https://img.shields.io/badge/Facebook-%231877F2.svg?&style=for-the-badge&logo=facebook&logoColor=white" />
-  </a>
-  <a href="https://github.com/levidang306">
-    <img src="https://img.shields.io/badge/GitHub-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white" />
-  </a>
-  <a href="https://www.linkedin.com/in/levi-dang/">
-    <img src="https://img.shields.io/badge/LinkedIn-%230A66C2.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
-  <a href="mailto:levi@enclave.vn">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-  </a>
-</p>
+<sub>Have an AI system that needs to survive real traffic? → <a href="mailto:nhatlinh.dut.3@gmail.com">nhatlinh.dut.3@gmail.com</a></sub>
 
 </div>
